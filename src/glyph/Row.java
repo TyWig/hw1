@@ -15,28 +15,42 @@ public class Row extends CompositeGlyph {
     }
 
     @Override
+    public void compose() {
+
+    }
+
+    @Override
     public void setParent(Glyph parent) {
 
     }
 
     @Override
-    public Rectangle getBounds() {
-        return null;
+    public Cursor getBounds() {
+        Cursor bounds = new Cursor();
+        bounds.x = this.x;
+        bounds.y = this.y;
+        for(Glyph child: this.children) {
+            Cursor childBounds = child.getBounds();
+            if(childBounds.height > bounds.height) { bounds.height = childBounds.height; }
+            bounds.width += childBounds.width;
+        }
+        return bounds;
     }
 
     @Override
     public boolean intersects(Point point) {
+
         return false;
     }
 
     @Override
     public void remove(Glyph glyph) {
-
+        this.children.remove(glyph);
     }
 
     @Override
     public Glyph child(int position) {
-        return null;
+        return this.children.remove(position);
     }
 
     @Override

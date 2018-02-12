@@ -5,7 +5,7 @@ import java.awt.Point;
 import java.util.Vector;
 import strategy.*;
 
-public class Composition extends Glyph {
+public class Composition extends CompositeGlyph {
 
     private Vector<Glyph> children;
     private Compositor compositor;
@@ -25,32 +25,38 @@ public class Composition extends Glyph {
     }
 
     @Override
-    Rectangle getBounds() {
-        return null;
+    public void compose() {
+
     }
 
     @Override
-    boolean intersects(Point point) {
+    public Cursor getBounds() {
+        return new Cursor();
+    }
+
+    @Override
+    public boolean intersects(Point point) {
         return false;
     }
 
     @Override
-    void insert(Glyph glyph, int position) {
+    public void insert(Glyph glyph, int position) {
 
     }
 
     @Override
-    void remove(Glyph glyph) {
+    public void remove(Glyph glyph) {
 
     }
 
     @Override
-    Glyph child(int position) {
+    public Glyph child(int position) {
+
         return null;
     }
-
     @Override
-    Glyph getParent() {
+    public Glyph getParent() {
+
         return null;
     }
 }

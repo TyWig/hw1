@@ -20,8 +20,13 @@ public class Character extends Glyph {
     }
 
     @Override
-    public Rectangle getBounds() {
-        throw new UnsupportedOperationException();
+    public void compose() {
+
+    }
+
+    @Override
+    public Cursor getBounds() {
+        return new Cursor();
     }
 
     @Override

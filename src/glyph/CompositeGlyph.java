@@ -8,9 +8,8 @@ import java.util.Vector;
 
 public abstract class CompositeGlyph extends Glyph {
 
-    private Vector<Glyph> children;
-    private Glyph parent;
-    private Rectangle bounds;
+    protected Vector<Glyph> children;
+    protected Cursor bounds;
 
     public CompositeGlyph() {
         this.children = new Vector<>();
@@ -20,7 +19,7 @@ public abstract class CompositeGlyph extends Glyph {
         this.parent = parent;
     }
 
-    public void setBounds(Rectangle bounds) {
+    public void setBounds(Cursor bounds) {
         this.bounds = bounds;
     }
 
@@ -31,17 +30,13 @@ public abstract class CompositeGlyph extends Glyph {
     @Override
     public void draw(Window window) {
         Iterator<Glyph> it = createIterator();
-        System.out.println("drawing: ");
-        for(Glyph child : children){
-            child.draw(window);
+        while(it.hasNext()){
+            it.next().draw(window);
         }
-//        while(it.hasNext()){
-//            it.next().draw(window);
-//        }
     }
 
     @Override
-    public Rectangle getBounds() {
+    public Cursor getBounds() {
         return this.bounds;
     }
 

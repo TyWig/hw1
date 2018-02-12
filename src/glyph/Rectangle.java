@@ -36,8 +36,18 @@ public class Rectangle extends CompositeGlyph {
     }
 
     @Override
-    public Rectangle getBounds() {
-        return this;
+    public void compose() {
+
+    }
+
+    @Override
+    public Cursor getBounds() {
+        Cursor bounds = new Cursor();
+        bounds.x = this.x;
+        bounds.y = this.y;
+        bounds.height = this.height;
+        bounds.width = this.width;
+        return bounds;
     }
 
     @Override
