@@ -7,9 +7,8 @@ import java.util.Iterator;
 import java.util.Vector;
 
 public abstract class CompositeGlyph extends Glyph {
-
     protected Vector<Glyph> children;
-    protected Cursor bounds;
+    private Cursor bounds;
 
     public CompositeGlyph() {
         this.children = new Vector<>();

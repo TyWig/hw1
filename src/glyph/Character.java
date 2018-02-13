@@ -4,11 +4,10 @@ import window.Window;
 import java.awt.Point;
 
 public class Character extends Glyph {
-
-    private Glyph parent;
     private char myChar;
 
     public Character(char c) {
+        super();
         this.x = 0;
         this.y = 0;
         this.myChar = c;
@@ -17,6 +16,8 @@ public class Character extends Glyph {
     @Override
     public void draw(Window window) {
         window.drawCharacter(this.myChar, this.x, this.y);
+        this.height = window.charHeight(this.myChar);
+        this.width = window.charWidth(this.myChar);
     }
 
     @Override
@@ -47,15 +48,5 @@ public class Character extends Glyph {
     @Override
     public Glyph child(int position) {
         throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public void setParent(Glyph parent) {
-        this.parent = parent;
-    }
-
-    @Override
-    public Glyph getParent() {
-        return this.parent;
     }
 }

@@ -20,11 +20,6 @@ public class Row extends CompositeGlyph {
     }
 
     @Override
-    public void setParent(Glyph parent) {
-
-    }
-
-    @Override
     public Cursor getBounds() {
         Cursor bounds = new Cursor();
         bounds.x = this.x;
@@ -39,7 +34,6 @@ public class Row extends CompositeGlyph {
 
     @Override
     public boolean intersects(Point point) {
-
         return false;
     }
 
@@ -51,10 +45,5 @@ public class Row extends CompositeGlyph {
     @Override
     public Glyph child(int position) {
         return this.children.remove(position);
-    }
-
-    @Override
-    public Glyph getParent() {
-        return null;
     }
 }

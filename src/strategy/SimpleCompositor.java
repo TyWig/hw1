@@ -32,21 +32,11 @@ public class SimpleCompositor implements Compositor {
         while(it.hasNext()){
             Glyph curr = it.next();
             try{
-
-                curr.draw(this.window);
                 curr.compose();
             }catch(UnsupportedOperationException ex){
                 System.out.println("something happened boi.");
                 continue;
             }
         }
-    }
-
-    private class Bounds
-    {
-        public int x;
-        public int y;
-        public int height;
-        public int width;
     }
 }

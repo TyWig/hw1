@@ -34,26 +34,7 @@ public class Column extends CompositeGlyph {
 
     @Override
     public boolean intersects(Point point) {
+
         return false;
-    }
-
-    @Override
-    public void insert(Glyph glyph, int position) {
-        this.children.add(position, glyph);
-    }
-
-    @Override
-    public void remove(Glyph glyph) {
-        this.children.remove(glyph);
-    }
-
-    @Override
-    public Glyph child(int position) {
-        return this.children.get(position);
-    }
-
-    @Override
-    public Glyph getParent() {
-        return this.parent;
     }
 }

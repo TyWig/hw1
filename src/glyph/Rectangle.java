@@ -6,8 +6,6 @@ import java.awt.Point;
 
 public class Rectangle extends CompositeGlyph {
 
-    private int width;
-    private int height;
     private Glyph parent;
 
     public Rectangle (int width, int height) {
@@ -15,14 +13,6 @@ public class Rectangle extends CompositeGlyph {
         this.y = 0;
         this.width = width;
         this.height = height;
-    }
-
-    public int getWidth() {
-        return width;
-    }
-
-    public int getHeight() {
-        return height;
     }
 
     @Override
