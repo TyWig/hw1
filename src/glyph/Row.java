@@ -15,35 +15,19 @@ public class Row extends CompositeGlyph {
     }
 
     @Override
-    public void compose() {
-
-    }
-
-    @Override
     public Cursor getBounds() {
-        Cursor bounds = new Cursor();
-        bounds.x = this.x;
-        bounds.y = this.y;
+        this.cursor.x = this.x;
+        this.cursor.y = this.y;
         for(Glyph child: this.children) {
             Cursor childBounds = child.getBounds();
-            if(childBounds.height > bounds.height) { bounds.height = childBounds.height; }
-            bounds.width += childBounds.width;
+            if(childBounds.height > this.cursor.height) { this.cursor.height = childBounds.height; }
+            this.cursor.width += childBounds.width;
         }
-        return bounds;
+        return this.cursor;
     }
 
     @Override
     public boolean intersects(Point point) {
         return false;
-    }
-
-    @Override
-    public void remove(Glyph glyph) {
-        this.children.remove(glyph);
-    }
-
-    @Override
-    public Glyph child(int position) {
-        return this.children.remove(position);
     }
 }

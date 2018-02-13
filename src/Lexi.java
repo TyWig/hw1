@@ -9,12 +9,15 @@ public class Lexi {
 
     public static void main(String[] args) {
         Window window = new SwingWindow("Hello");
+        Glyph document = createDocument(window);
+        window.setContents(document);
+    }
 
+    public static Glyph createDocument(Window window){
         Glyph row1 = new Row();
         Glyph row2 = new Row();
         Glyph column = new Column();
-
-        Glyph column1 = new Composition(window);
+        Glyph doc = new Composition(window);
 
         column.insert(new glyph.Character('x'), 0);
         column.insert(new glyph.Character('y'), 1);
@@ -29,9 +32,8 @@ public class Lexi {
         row2.insert(new glyph.Rectangle(20, 10), 1);
         row2.insert(new glyph.Character('y'), 2);
 
-        column1.insert(row1, 0);
-        column1.insert(row2, 1);
-
-        window.setContents(column1);
+        doc.insert(row1, 0);
+        doc.insert(row2, 1);
+        return doc;
     }
 }

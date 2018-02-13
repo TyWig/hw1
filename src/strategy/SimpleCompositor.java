@@ -27,16 +27,22 @@ public class SimpleCompositor implements Compositor {
 
     @Override
     public void compose() {
-        bounds = composition.getBounds();
-        Iterator<Glyph> it = composition.createIterator();
-        while(it.hasNext()){
-            Glyph curr = it.next();
-            try{
-                curr.compose();
-            }catch(UnsupportedOperationException ex){
-                System.out.println("something happened boi.");
-                continue;
-            }
+        Glyph last = composition;
+        Glyph next = last.getParent();
+        while(next != null) {
+            last = next;
+            next = next.getParent();
         }
+
+
+
+//        while(it.hasNext()){
+//            Glyph curr = it.next();
+//            try{
+//                curr.compose();
+//            }catch(UnsupportedOperationException ex){
+//                System.out.println("something happened boi.");
+//            }
+//        }
     }
 }
