@@ -9,11 +9,15 @@ public abstract class Glyph {
     protected int width;
     protected int height;
     protected Glyph parent;
+    protected Cursor cursor;
+
+    public Glyph() {
+        this.cursor = new Cursor();
+    }
 
     public void setParent(Glyph parent) {
         this.parent = parent;
     }
-
     public Glyph getParent() {
         return this.parent;
     }

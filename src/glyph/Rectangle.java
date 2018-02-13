@@ -9,6 +9,7 @@ public class Rectangle extends CompositeGlyph {
     private Glyph parent;
 
     public Rectangle (int width, int height) {
+        super();
         this.x = 0;
         this.y = 0;
         this.width = width;
@@ -27,7 +28,7 @@ public class Rectangle extends CompositeGlyph {
 
     @Override
     public void compose() {
-
+        System.out.println(this.x + " " + this.y);
     }
 
     @Override

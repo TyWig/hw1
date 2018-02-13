@@ -21,20 +21,18 @@ public class Column extends CompositeGlyph {
 
     @Override
     public Cursor getBounds() {
-        Cursor bounds = new Cursor();
-        bounds.x = this.x;
-        bounds.y = this.y;
+        this.cursor.x = this.x;
+        this.cursor.y = this.y;
         for(Glyph child: this.children) {
             Cursor childBounds = child.getBounds();
-            if(childBounds.width > bounds.width) { bounds.width = childBounds.width; }
-            bounds.width += childBounds.width;
+            if(childBounds.width > this.cursor.width) { this.cursor.width = childBounds.width; }
+            this.cursor.width += childBounds.width;
         }
-        return bounds;
+        return this.cursor;
     }
 
     @Override
     public boolean intersects(Point point) {
-
         return false;
     }
 }

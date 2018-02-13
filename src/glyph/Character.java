@@ -22,12 +22,12 @@ public class Character extends Glyph {
 
     @Override
     public void compose() {
-
+        System.out.println(this.myChar);
     }
 
     @Override
     public Cursor getBounds() {
-        return new Cursor();
+        return this.cursor;
     }
 
     @Override
