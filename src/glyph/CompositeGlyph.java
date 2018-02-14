@@ -1,21 +1,17 @@
 package glyph;
 
-import java.awt.Point;
 import window.Window;
-
 import java.util.Iterator;
-import java.util.Vector;
+import java.util.LinkedList;
 
-public abstract class CompositeGlyph extends Glyph {
-    protected Vector<Glyph> children;
+//Composite(165).Component
 
-    public CompositeGlyph() {
-        super();
-        this.children = new Vector<>();
-    }
+public abstract class CompositeGlyph extends Composition {
+    LinkedList<Glyph> children;
 
-    public void setParent(Glyph parent) {
-        this.parent = parent;
+    CompositeGlyph(Window window) {
+        super(window);
+        this.children = new LinkedList<>();
     }
 
     public Iterator<Glyph> createIterator() {
@@ -23,48 +19,38 @@ public abstract class CompositeGlyph extends Glyph {
     }
 
     @Override
-    public void compose(){
-        for(Glyph child: this.children) {
-            child.compose();
-        }
-    }
-
-    @Override
     public void draw(Window window) {
-        for(Glyph child: this.children) {
+        for (Glyph child : this.children) {
             child.draw(window);
         }
     }
 
     @Override
-    public Cursor getBounds() {
-        return this.cursor;
-    }
-
-    @Override
-    public boolean intersects(Point point) {
-        return false;
+    public boolean intersects(int x, int y) {
+        this.x = x;
+        this.y = y;
+        return true;
     }
 
     @Override
     public void insert(Glyph glyph, int position) {
         children.add(position, glyph);
         glyph.setParent(this);
+        Glyph root = goToRoot();
+        root.compose();
     }
 
     @Override
     public void remove(Glyph glyph) {
-        children.remove(glyph);
+        this.children.remove(glyph);
         glyph.setParent(null);
+        Glyph root = goToRoot();
+        root.compose();
     }
 
     @Override
     public Glyph child(int position) {
-        return children.get(position);
-    }
-
-    @Override
-    public Glyph getParent() {
-        return parent;
+        if(position >= children.size()) return null;
+        return this.children.get(position);
     }
 }

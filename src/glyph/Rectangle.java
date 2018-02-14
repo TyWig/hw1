@@ -2,11 +2,9 @@ package glyph;
 
 import window.Window;
 
-import java.awt.Point;
+//Composite(165).Leaf
 
-public class Rectangle extends CompositeGlyph {
-
-    private Glyph parent;
+public class Rectangle extends Glyph {
 
     public Rectangle (int width, int height) {
         super();
@@ -17,33 +15,29 @@ public class Rectangle extends CompositeGlyph {
     }
 
     @Override
-    public void setParent(Glyph parent) {
-        this.parent = parent;
-    }
-
-    @Override
     public void draw(Window window) {
         window.drawRectangle(this.x, this.y, this.width, this.height);
     }
 
     @Override
     public void compose() {
-        System.out.println(this.x + " " + this.y);
+
     }
 
     @Override
-    public Cursor getBounds() {
-        Cursor bounds = new Cursor();
-        bounds.x = this.x;
-        bounds.y = this.y;
-        bounds.height = this.height;
-        bounds.width = this.width;
-        return bounds;
+    public Cursor getBounds(Window window) {
+        this.cursor.width = this.width;
+        this.cursor.height = this.height;
+        this.cursor.y = this.y;
+        this.cursor.x = this.x;
+        return this.cursor;
     }
 
     @Override
-    public boolean intersects(Point point) { 
-        return false;
+    public boolean intersects(int x, int y) {
+        this.x = x;
+        this.y = y;
+        return true;
     }
 
     @Override
@@ -59,10 +53,5 @@ public class Rectangle extends CompositeGlyph {
     @Override
     public Glyph child(int position) {
         throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public Glyph getParent() {
-        return parent;
     }
 }

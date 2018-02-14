@@ -5,4 +5,9 @@ public class Cursor {
     public int y;
     public int height;
     public int width;
+
+    public void reset() {
+//        x = y = height = width = 0;
+        height = width = 0;
+    }
 }

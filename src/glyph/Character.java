@@ -1,7 +1,8 @@
 package glyph;
 
 import window.Window;
-import java.awt.Point;
+
+//Composite(165).Leaf
 
 public class Character extends Glyph {
     private char myChar;
@@ -14,25 +15,32 @@ public class Character extends Glyph {
     }
 
     @Override
-    public void draw(Window window) {
-        window.drawCharacter(this.myChar, this.x, this.y);
-        this.height = window.charHeight(this.myChar);
+    public Cursor getBounds(Window window) {
+        this.cursor.reset();
         this.width = window.charWidth(this.myChar);
-    }
-
-    @Override
-    public void compose() {
-        System.out.println(this.myChar);
-    }
-
-    @Override
-    public Cursor getBounds() {
+        this.height = window.charHeight(this.myChar);
+        this.cursor.height = this.height;
+        this.cursor.width = this.width;
+        this.cursor.x = this.x;
+        this.cursor.y = this.y;
         return this.cursor;
     }
 
     @Override
-    public boolean intersects(Point point) {
-        return false;
+    public void draw(Window window) {
+        window.drawCharacter(this.myChar, this.x, this.y);
+    }
+
+    @Override
+    public void compose() {
+//        System.out.println(this.myChar);
+    }
+
+    @Override
+    public boolean intersects(int x, int y) {
+        this.x = x;
+        this.y = y;
+        return true;
     }
 
     @Override
