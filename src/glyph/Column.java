@@ -17,7 +17,6 @@ public class Column extends CompositeGlyph {
         this.cursor.y = this.y;
         for(Glyph child: this.children) {
             Cursor childBounds = child.getBounds(window);
-            //System.out.println(String.format("COLUMN!\t Width: %d\tHeight: %d\tx: %d\ty: %d\t", childBounds.width, childBounds.height, childBounds.x, childBounds.y));
             if(childBounds.width > this.cursor.width) {
                 this.cursor.width += childBounds.width;
             }

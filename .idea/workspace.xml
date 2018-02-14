@@ -1,21 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="03d92ae7-d800-41d3-9d0b-69d34c941a93" name="Default" comment="WIP: Idk it kinda works.">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/compositor/SimpleCompositor.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="03d92ae7-d800-41d3-9d0b-69d34c941a93" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/Lexi.java" afterPath="$PROJECT_DIR$/src/Lexi.java" />
-      <change beforePath="$PROJECT_DIR$/src/glyph/Character.java" afterPath="$PROJECT_DIR$/src/glyph/Character.java" />
+      <change beforePath="$PROJECT_DIR$/src/compositor/SimpleCompositor.java" afterPath="$PROJECT_DIR$/src/compositor/SimpleCompositor.java" />
       <change beforePath="$PROJECT_DIR$/src/glyph/Column.java" afterPath="$PROJECT_DIR$/src/glyph/Column.java" />
-      <change beforePath="$PROJECT_DIR$/src/glyph/CompositeGlyph.java" afterPath="$PROJECT_DIR$/src/glyph/CompositeGlyph.java" />
-      <change beforePath="$PROJECT_DIR$/src/glyph/Composition.java" afterPath="$PROJECT_DIR$/src/glyph/Composition.java" />
-      <change beforePath="$PROJECT_DIR$/src/glyph/Cursor.java" afterPath="$PROJECT_DIR$/src/glyph/Cursor.java" />
-      <change beforePath="$PROJECT_DIR$/src/glyph/Glyph.java" afterPath="$PROJECT_DIR$/src/glyph/Glyph.java" />
-      <change beforePath="$PROJECT_DIR$/src/glyph/Rectangle.java" afterPath="$PROJECT_DIR$/src/glyph/Rectangle.java" />
-      <change beforePath="$PROJECT_DIR$/src/glyph/Row.java" afterPath="$PROJECT_DIR$/src/glyph/Row.java" />
-      <change beforePath="$PROJECT_DIR$/src/strategy/Compositor.java" afterPath="$PROJECT_DIR$/src/compositor/Compositor.java" />
-      <change beforePath="$PROJECT_DIR$/src/strategy/SimpleCompositor.java" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,11 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Column.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Column.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/glyph/Column.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+            <state relative-caret-position="255">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -64,18 +53,18 @@
       <file leaf-file-name="Row.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/glyph/Row.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+            <state relative-caret-position="90">
+              <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SimpleCompositor.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SimpleCompositor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/compositor/SimpleCompositor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="32" lean-forward="false" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+            <state relative-caret-position="362">
+              <caret line="33" column="61" lean-forward="false" selection-start-line="33" selection-start-column="61" selection-end-line="33" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -176,7 +165,6 @@
         <option value="$PROJECT_DIR$/src/strategy/Compositor.java" />
         <option value="$PROJECT_DIR$/src/glyph/Cursor.java" />
         <option value="$PROJECT_DIR$/src/strategy/SimpleCompositor.java" />
-        <option value="$PROJECT_DIR$/src/compositor/SimpleCompositor.java" />
         <option value="$PROJECT_DIR$/src/compositor/Compositor.java" />
         <option value="$PROJECT_DIR$/src/Lexi.java" />
         <option value="$PROJECT_DIR$/src/glyph/Rectangle.java" />
@@ -186,6 +174,7 @@
         <option value="$PROJECT_DIR$/src/glyph/CompositeGlyph.java" />
         <option value="$PROJECT_DIR$/src/glyph/Row.java" />
         <option value="$PROJECT_DIR$/src/glyph/Column.java" />
+        <option value="$PROJECT_DIR$/src/compositor/SimpleCompositor.java" />
       </list>
     </option>
   </component>
@@ -228,6 +217,18 @@
               <item name="hw1" type="b2602c69:ProjectViewProjectNode" />
               <item name="hw1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hw1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hw1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="compositor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hw1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hw1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="glyph" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hw1" type="b2602c69:ProjectViewProjectNode" />
@@ -320,7 +321,7 @@
       <option name="presentableId" value="Default" />
       <updated>1517523140888</updated>
       <workItem from="1518455216142" duration="5303000" />
-      <workItem from="1518582184087" duration="1031000" />
+      <workItem from="1518582184087" duration="1115000" />
     </task>
     <task id="LOCAL-00001" summary="WIP: Idk it kinda works.">
       <created>1518540858473</created>
@@ -329,11 +330,18 @@
       <option name="project" value="LOCAL" />
       <updated>1518540858473</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added proper comments with design pattern and role of class. Implemented compose, it kinda works.">
+      <created>1518583263966</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1518583263966</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6334000" />
+    <option name="totallyTimeSpent" value="6418000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -346,6 +354,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="978" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842582" sideWeight="0.4957265" order="6" side_tool="false" content_ui="tabs" />
@@ -355,7 +364,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33408833" sideWeight="0.51892555" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33408833" sideWeight="0.51892555" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33408833" sideWeight="0.51892555" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33408833" sideWeight="0.48107448" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842582" sideWeight="0.4957265" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -385,7 +394,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="WIP: Idk it kinda works." />
-    <option name="LAST_COMMIT_MESSAGE" value="WIP: Idk it kinda works." />
+    <MESSAGE value="Added proper comments with design pattern and role of class. Implemented compose, it kinda works." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added proper comments with design pattern and role of class. Implemented compose, it kinda works." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -829,16 +839,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/compositor/SimpleCompositor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="32" lean-forward="false" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/compositor/Compositor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -854,14 +854,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/glyph/Rectangle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -901,19 +893,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/glyph/Row.java">
+    <entry file="file://$PROJECT_DIR$/src/glyph/Column.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+        <state relative-caret-position="255">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/glyph/Column.java">
+    <entry file="file://$PROJECT_DIR$/src/glyph/Row.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+        <state relative-caret-position="90">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/glyph/Rectangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/compositor/SimpleCompositor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="33" column="61" lean-forward="false" selection-start-line="33" selection-start-column="61" selection-end-line="33" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
