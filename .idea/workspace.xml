@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="03d92ae7-d800-41d3-9d0b-69d34c941a93" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/compositor/SimpleCompositor.java" afterPath="$PROJECT_DIR$/src/compositor/SimpleCompositor.java" />
-      <change beforePath="$PROJECT_DIR$/src/glyph/Column.java" afterPath="$PROJECT_DIR$/src/glyph/Column.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -321,7 +319,7 @@
       <option name="presentableId" value="Default" />
       <updated>1517523140888</updated>
       <workItem from="1518455216142" duration="5303000" />
-      <workItem from="1518582184087" duration="1115000" />
+      <workItem from="1518582184087" duration="1138000" />
     </task>
     <task id="LOCAL-00001" summary="WIP: Idk it kinda works.">
       <created>1518540858473</created>
@@ -337,11 +335,18 @@
       <option name="project" value="LOCAL" />
       <updated>1518583263966</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Removed commented out stuff.">
+      <created>1518583311207</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1518583311207</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6418000" />
+    <option name="totallyTimeSpent" value="6441000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -354,7 +359,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="978" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842582" sideWeight="0.4957265" order="6" side_tool="false" content_ui="tabs" />
@@ -365,7 +369,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33408833" sideWeight="0.51892555" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33408833" sideWeight="0.51892555" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33408833" sideWeight="0.48107448" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33408833" sideWeight="0.48107448" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842582" sideWeight="0.4957265" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -395,7 +399,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="WIP: Idk it kinda works." />
     <MESSAGE value="Added proper comments with design pattern and role of class. Implemented compose, it kinda works." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added proper comments with design pattern and role of class. Implemented compose, it kinda works." />
+    <MESSAGE value="Removed commented out stuff." />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed commented out stuff." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
