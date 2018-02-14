@@ -10,7 +10,6 @@ public abstract class Composition extends Glyph {
     private Compositor compositor;
 
     Composition(Window window) {
-        super();
         this.compositor = new SimpleCompositor(window);
         this.compositor.setComposition(this);
     }

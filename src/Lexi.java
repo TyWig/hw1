@@ -18,16 +18,17 @@ public class Lexi {
         column.insert(new Character('z'), 2);
 
         row1.insert(new Character('a'), 0);
-        row1.insert(new Rectangle(10,20), 1);
-        row1.insert(column, 2);
-        row1.insert(new Character('b'), 3);
+//        row1.insert(new Rectangle(10,20), 1);
+//        row1.insert(column, 2);
+        row1.insert(new Character('b'), 2);
+        row1.insert(new Character('c'), 2);
 
-        row2.insert(new Character('x'), 0);
-        row2.insert(new Rectangle(20, 10), 1);
-        row2.insert(new Character('y'), 2);
-
-        doc.insert(row1, 0);
-        doc.insert(row2, 1);
-        window.setContents(doc);
+//        row2.insert(new Character('x'), 0);
+//        row2.insert(new Rectangle(20, 10), 1);
+//        row2.insert(new Character('y'), 2);
+//
+//        doc.insert(row1, 0);
+//        doc.insert(row2, 1);
+        window.setContents(column);
     }
 }

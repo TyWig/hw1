@@ -12,7 +12,7 @@ public class Row extends CompositeGlyph {
 
     @Override
     public Cursor getBounds(Window window) {
-        this.cursor.reset();
+//        this.cursor.reset();
         this.cursor.x = this.x;
         this.cursor.y = this.y;
         for(Glyph child: this.children) {

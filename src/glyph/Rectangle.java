@@ -7,9 +7,6 @@ import window.Window;
 public class Rectangle extends Glyph {
 
     public Rectangle (int width, int height) {
-        super();
-        this.x = 0;
-        this.y = 0;
         this.width = width;
         this.height = height;
     }

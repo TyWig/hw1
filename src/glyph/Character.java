@@ -8,15 +8,11 @@ public class Character extends Glyph {
     private char myChar;
 
     public Character(char c) {
-        super();
-        this.x = 0;
-        this.y = 0;
         this.myChar = c;
     }
 
     @Override
     public Cursor getBounds(Window window) {
-        this.cursor.reset();
         this.width = window.charWidth(this.myChar);
         this.height = window.charHeight(this.myChar);
         this.cursor.height = this.height;
@@ -33,13 +29,13 @@ public class Character extends Glyph {
 
     @Override
     public void compose() {
-//        System.out.println(this.myChar);
+
     }
 
     @Override
     public boolean intersects(int x, int y) {
-        this.x = x;
-        this.y = y;
+        this.x = x-this.x;
+        this.y = y-this.y;
         return true;
     }
 
