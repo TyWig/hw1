@@ -16,6 +16,13 @@ public abstract class Composition extends Glyph {
 
     @Override
     public void compose() {
+        this.width = 0;
+        this.height = 0;
         this.compositor.compose();
+    }
+
+    public void updateBounds(Cursor cursor)
+    {
+        this.cursor = cursor;
     }
 }

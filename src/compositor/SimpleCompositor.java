@@ -25,23 +25,22 @@ public class SimpleCompositor implements Compositor {
 
     @Override
     public void compose() {
-        //TODO: fix this
         Cursor newBounds = composition.getBounds(this.window);
         int childIndex = 0;
         Glyph next = composition.child(childIndex);
 
         while(next != null) {
-            Cursor childBounds = next.getBounds(this.window);
-            next.intersects(newBounds.height,newBounds.width);
-
-            Cursor testBounds = next.getBounds(this.window);
+            next.intersects(newBounds.x, newBounds.y);
             next.compose();
-//            newBounds.x +=  testBounds.x;
-//            newBounds.y +=  testBounds.height;
+
+            Cursor childBounds = next.getBounds(this.window);
+            this.composition.updateCursor(childBounds);
+            newBounds = composition.getBounds(this.window);
 
             childIndex++;
             next = composition.child(childIndex);
-            bounds = newBounds;
         }
+
+        this.composition.updateBounds(newBounds);
     }
 }

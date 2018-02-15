@@ -51,4 +51,11 @@ public class Rectangle extends Glyph {
     public Glyph child(int position) {
         throw new UnsupportedOperationException();
     }
+
+    @Override
+    public void updateCursor(Cursor childBounds)
+    {
+
+    }
+
 }

@@ -7,7 +7,7 @@ import java.util.LinkedList;
 //Composite(165).Component
 
 public abstract class CompositeGlyph extends Composition {
-    LinkedList<Glyph> children;
+    private LinkedList<Glyph> children;
 
     CompositeGlyph(Window window) {
         super(window);

@@ -12,16 +12,12 @@ public class Column extends CompositeGlyph {
 
     @Override
     public Cursor getBounds(Window window) {
-        this.cursor.x = this.x;
-        this.cursor.y = this.y;
-        for(Glyph child: this.children) {
-            Cursor childBounds = child.getBounds(window);
-            if(childBounds.width > this.cursor.width) {
-                this.cursor.width += childBounds.width;
-            }
-            this.cursor.height += childBounds.height;
-        }
-        return this.cursor;
+        Cursor cursor = new Cursor();
+        cursor.x = this.x;
+        cursor.y = this.y + this.height;
+        cursor.height = this.height;
+        cursor.width = this.width;
+        return cursor;
     }
 
     @Override
@@ -29,5 +25,11 @@ public class Column extends CompositeGlyph {
         this.x = x;
         this.y = y;
         return true;
+    }
+
+    @Override
+    public void updateCursor(Cursor childBounds) {
+        this.width = this.width < childBounds.width ? childBounds.width : this.width;
+        this.height += childBounds.height;
     }
 }

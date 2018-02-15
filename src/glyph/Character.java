@@ -13,13 +13,18 @@ public class Character extends Glyph {
 
     @Override
     public Cursor getBounds(Window window) {
-        this.width = window.charWidth(this.myChar);
-        this.height = window.charHeight(this.myChar);
-        this.cursor.height = this.height;
-        this.cursor.width = this.width;
-        this.cursor.x = this.x;
-        this.cursor.y = this.y;
-        return this.cursor;
+        Cursor bounds = new Cursor();
+        bounds.width = window.charWidth(this.myChar);
+        bounds.height = window.charHeight(this.myChar);
+        bounds.x = this.x;
+        bounds.y = this.y;
+//        this.width = window.charWidth(this.myChar);
+//        this.height = window.charHeight(this.myChar);
+//        this.cursor.height = this.height;
+//        this.cursor.width = this.width;
+//        this.cursor.x = this.x;
+//        this.cursor.y = this.y;
+        return bounds;
     }
 
     @Override
@@ -34,8 +39,8 @@ public class Character extends Glyph {
 
     @Override
     public boolean intersects(int x, int y) {
-        this.x = x-this.x;
-        this.y = y-this.y;
+        this.x = x;
+        this.y = y;
         return true;
     }
 
@@ -52,5 +57,10 @@ public class Character extends Glyph {
     @Override
     public Glyph child(int position) {
         throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public void updateCursor(Cursor childBounds) {
+
     }
 }

@@ -7,7 +7,6 @@ public class Cursor {
     public int width;
 
     public void reset() {
-//        x = y = height = width = 0;
         height = width = 0;
     }
 }

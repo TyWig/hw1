@@ -7,12 +7,12 @@ import window.*;
 public abstract class Glyph {
     protected int x;
     protected int y;
-    protected int width;
-    protected int height;
-    Glyph parent;
+    int width;
+    int height;
+    private Glyph parent;
     Cursor cursor;
 
-    public Glyph() {
+    Glyph() {
         this.cursor = new Cursor();
     }
 
@@ -20,7 +20,7 @@ public abstract class Glyph {
         this.parent = parent;
     }
 
-    public Glyph getParent() {
+    private Glyph getParent() {
         return this.parent;
     }
 
@@ -40,4 +40,5 @@ public abstract class Glyph {
     public abstract void insert(Glyph glyph, int position);
     public abstract void remove(Glyph glyph);
     public abstract Glyph child(int position);
+    public abstract void updateCursor(Cursor childBounds);
 }
