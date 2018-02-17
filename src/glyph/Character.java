@@ -18,12 +18,6 @@ public class Character extends Glyph {
         bounds.height = window.charHeight(this.myChar);
         bounds.x = this.x;
         bounds.y = this.y;
-//        this.width = window.charWidth(this.myChar);
-//        this.height = window.charHeight(this.myChar);
-//        this.cursor.height = this.height;
-//        this.cursor.width = this.width;
-//        this.cursor.x = this.x;
-//        this.cursor.y = this.y;
         return bounds;
     }
 

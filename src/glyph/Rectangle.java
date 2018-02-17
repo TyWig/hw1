@@ -23,11 +23,12 @@ public class Rectangle extends Glyph {
 
     @Override
     public Cursor getBounds(Window window) {
-        this.cursor.width = this.width;
-        this.cursor.height = this.height;
-        this.cursor.y = this.y;
-        this.cursor.x = this.x;
-        return this.cursor;
+        Cursor cursor = new Cursor();
+        cursor.width = this.width;
+        cursor.height = this.height;
+        cursor.y = this.y;
+        cursor.x = this.x;
+        return cursor;
     }
 
     @Override

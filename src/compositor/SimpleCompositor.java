@@ -11,11 +11,9 @@ public class SimpleCompositor implements Compositor {
 
     private Window window;
     private Composition composition;
-    private Cursor bounds;
 
     public SimpleCompositor(Window window) {
         this.window = window;
-        this.bounds = new Cursor();
     }
 
     @Override

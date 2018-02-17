@@ -8,6 +8,7 @@ import compositor.*;
 public abstract class Composition extends Glyph {
 
     private Compositor compositor;
+    protected Cursor cursor;
 
     Composition(Window window) {
         this.compositor = new SimpleCompositor(window);

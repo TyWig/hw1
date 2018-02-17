@@ -10,11 +10,6 @@ public abstract class Glyph {
     int width;
     int height;
     private Glyph parent;
-    Cursor cursor;
-
-    Glyph() {
-        this.cursor = new Cursor();
-    }
 
     public void setParent(Glyph parent) {
         this.parent = parent;
