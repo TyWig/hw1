@@ -7,35 +7,23 @@ import window.Window;
 public class Rectangle extends Glyph {
 
     public Rectangle (int width, int height) {
-        this.width = width;
-        this.height = height;
+        this.bounds.width = width;
+        this.bounds.height = height;
     }
 
     @Override
     public void draw(Window window) {
-        window.drawRectangle(this.x, this.y, this.width, this.height);
+        window.drawRectangle(this.bounds.x, this.bounds.y, this.bounds.width, this.bounds.height);
     }
 
     @Override
-    public void compose() {
-
-    }
+    public void compose() { }
 
     @Override
     public Cursor getBounds(Window window) {
         Cursor cursor = new Cursor();
-        cursor.width = this.width;
-        cursor.height = this.height;
-        cursor.y = this.y;
-        cursor.x = this.x;
+        cursor.setBounds(this.bounds);
         return cursor;
-    }
-
-    @Override
-    public boolean intersects(int x, int y) {
-        this.x = x;
-        this.y = y;
-        return true;
     }
 
     @Override
@@ -50,13 +38,10 @@ public class Rectangle extends Glyph {
 
     @Override
     public Glyph child(int position) {
-        throw new UnsupportedOperationException();
+        return null;
     }
 
     @Override
-    public void updateCursor(Cursor childBounds)
-    {
-
-    }
+    public void updateCursor(Cursor childBounds) { }
 
 }

@@ -38,7 +38,5 @@ public class SimpleCompositor implements Compositor {
             childIndex++;
             next = composition.child(childIndex);
         }
-
-        this.composition.updateBounds(newBounds);
     }
 }

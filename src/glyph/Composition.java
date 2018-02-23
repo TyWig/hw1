@@ -8,7 +8,6 @@ import compositor.*;
 public abstract class Composition extends Glyph {
 
     private Compositor compositor;
-    protected Cursor cursor;
 
     Composition(Window window) {
         this.compositor = new SimpleCompositor(window);
@@ -17,13 +16,11 @@ public abstract class Composition extends Glyph {
 
     @Override
     public void compose() {
-        this.width = 0;
-        this.height = 0;
+        this.bounds.reset();
         this.compositor.compose();
     }
 
-    public void updateBounds(Cursor cursor)
-    {
-        this.cursor = cursor;
+    public void updateBounds(Cursor cursor) {
+        this.bounds.setBounds(cursor);
     }
 }

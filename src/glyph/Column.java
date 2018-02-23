@@ -13,23 +13,16 @@ public class Column extends CompositeGlyph {
     @Override
     public Cursor getBounds(Window window) {
         Cursor cursor = new Cursor();
-        cursor.x = this.x;
-        cursor.y = this.y + this.height;
-        cursor.height = this.height;
-        cursor.width = this.width;
+        cursor.x = this.bounds.x;
+        cursor.y = this.bounds.y + this.bounds.height;
+        cursor.height = this.bounds.height;
+        cursor.width = this.bounds.width;
         return cursor;
     }
 
     @Override
-    public boolean intersects(int x, int y) {
-        this.x = x;
-        this.y = y;
-        return true;
-    }
-
-    @Override
     public void updateCursor(Cursor childBounds) {
-        this.width = this.width < childBounds.width ? childBounds.width : this.width;
-        this.height += childBounds.height;
+        this.bounds.width = this.bounds.width < childBounds.width ? childBounds.width : this.bounds.width;
+        this.bounds.height += childBounds.height;
     }
 }

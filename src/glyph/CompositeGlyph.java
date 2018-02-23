@@ -1,21 +1,16 @@
 package glyph;
 
 import window.Window;
-import java.util.Iterator;
 import java.util.LinkedList;
 
 //Composite(165).Component
 
 public abstract class CompositeGlyph extends Composition {
-    private LinkedList<Glyph> children;
+    LinkedList<Glyph> children;
 
     CompositeGlyph(Window window) {
         super(window);
         this.children = new LinkedList<>();
-    }
-
-    public Iterator<Glyph> createIterator() {
-        return children.listIterator();
     }
 
     @Override
@@ -23,13 +18,6 @@ public abstract class CompositeGlyph extends Composition {
         for (Glyph child : this.children) {
             child.draw(window);
         }
-    }
-
-    @Override
-    public boolean intersects(int x, int y) {
-        this.x = x;
-        this.y = y;
-        return true;
     }
 
     @Override
