@@ -6,7 +6,6 @@ import compositor.*;
 //Composite(165).Component
 
 public abstract class Composition extends Glyph {
-
     private Compositor compositor;
 
     Composition(Window window) {
@@ -18,9 +17,5 @@ public abstract class Composition extends Glyph {
     public void compose() {
         this.bounds.reset();
         this.compositor.compose();
-    }
-
-    public void updateBounds(Cursor cursor) {
-        this.bounds.setBounds(cursor);
     }
 }

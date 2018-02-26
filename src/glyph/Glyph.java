@@ -31,6 +31,12 @@ public abstract class Glyph {
         this.bounds.y = y;
     }
 
+    @Override
+    public String toString()
+    {
+        return String.format("Type: %s\tX: %d\tY: %d\tWidth: %d\tHeight: %d\n", this.getClass().toString(), this.bounds.x, this.bounds.y, this.bounds.width, this.bounds.height );
+    }
+
     public abstract void draw(Window window);
     public abstract void compose();
     public abstract Cursor getBounds(Window window);

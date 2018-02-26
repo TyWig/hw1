@@ -4,8 +4,9 @@ import window.Window;
 
 public class ScrollBar extends Embellishment {
 
-    ScrollBar(Window window) {
+    ScrollBar(Window window, Glyph glyph) {
         super(window);
+        this.children.addFirst(glyph);
     }
 
     @Override

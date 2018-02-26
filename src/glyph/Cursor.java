@@ -10,8 +10,7 @@ public class Cursor {
         height = width = 0;
     }
 
-    public void setBounds(Cursor cursor)
-    {
+    public void setBounds(Cursor cursor) {
         this.x = cursor.x;
         this.y = cursor.y;
         this.width = cursor.width;
