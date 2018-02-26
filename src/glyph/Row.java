@@ -10,6 +10,13 @@ public class Row extends CompositeGlyph {
         super(window);
     }
 
+    public Row(String string, Window window) {
+        super(window);
+        for (int i=0; i<string.length(); i++) {
+            this.insert(new Character(string.charAt(i)));
+        }
+    }
+
     @Override
     public Cursor getBounds(Window window) {
         Cursor cursor = new Cursor();

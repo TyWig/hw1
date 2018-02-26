@@ -27,7 +27,12 @@ public class Rectangle extends Glyph {
     }
 
     @Override
-    public void insert(Glyph glyph, int position) {
+    public void insert(Glyph glyph) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public void insert(Glyph[] glyphs) {
         throw new UnsupportedOperationException();
     }
 

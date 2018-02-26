@@ -32,7 +32,12 @@ public class Character extends Glyph {
     public void compose() { }
 
     @Override
-    public void insert(Glyph glyph, int position) {
+    public void insert(Glyph glyph) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public void insert(Glyph[] glyphs) {
         throw new UnsupportedOperationException();
     }
 

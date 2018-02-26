@@ -10,6 +10,13 @@ public class Column extends CompositeGlyph {
         super(window);
     }
 
+    public Column(String[] strings, Window window) {
+        super(window);
+        for(String s: strings) {
+            this.insert(new Row(s, window));
+        }
+    }
+
     @Override
     public Cursor getBounds(Window window) {
         Cursor cursor = new Cursor();

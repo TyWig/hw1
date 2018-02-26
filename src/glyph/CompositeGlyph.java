@@ -1,6 +1,8 @@
 package glyph;
 
 import window.Window;
+
+import java.util.Arrays;
 import java.util.LinkedList;
 
 //Composite(165).Component
@@ -21,9 +23,16 @@ public abstract class CompositeGlyph extends Composition {
     }
 
     @Override
-    public void insert(Glyph glyph, int position) {
+    public void insert(Glyph glyph) {
         this.children.add(glyph);
         glyph.setParent(this);
+        Glyph root = goToRoot();
+        root.compose();
+    }
+
+    @Override
+    public void insert(Glyph[] glyphs) {
+        this.children.addAll(Arrays.asList(glyphs));
         Glyph root = goToRoot();
         root.compose();
     }

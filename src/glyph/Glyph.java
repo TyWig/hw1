@@ -40,7 +40,8 @@ public abstract class Glyph {
     public abstract void draw(Window window);
     public abstract void compose();
     public abstract Cursor getBounds(Window window);
-    public abstract void insert(Glyph glyph, int position);
+    public abstract void insert(Glyph glyph);
+    public abstract void insert(Glyph[] glyphs);
     public abstract void remove(Glyph glyph);
     public abstract Glyph child(int position);
     public abstract void updateCursor(Cursor childBounds);

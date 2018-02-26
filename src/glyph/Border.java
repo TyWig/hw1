@@ -2,14 +2,12 @@ package glyph;
 
 import window.Window;
 
-import javax.xml.bind.annotation.XmlElementDecl;
-
 public class Border extends Embellishment {
 
-    private int topMargin = 2;
-    private int leftMargin = 2;
-    private int rightMargin = 2;
-    private int bottomMargin = 2;
+    private int topMargin = 5;
+    private int leftMargin = 5;
+    private int rightMargin = 5;
+    private int bottomMargin = 5;
 
     public Border(Window window, Glyph glyph) {
         super(window);
