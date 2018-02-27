@@ -3,9 +3,11 @@ package glyph;
 import window.Window;
 
 public class ScrollBar extends Embellishment {
+    private int width;
 
-    public ScrollBar(Window window, Glyph glyph) {
+    public ScrollBar(Window window, Glyph glyph, int width) {
         super(window);
+        this.width = width;
         this.children.addFirst(glyph);
         this.updateCursor(glyph.getBounds(window));
     }
@@ -15,7 +17,7 @@ public class ScrollBar extends Embellishment {
         for(Glyph glyph: this.children) {
             glyph.draw(window);
         }
-        window.addScrollBar(this.bounds.width,this.bounds.y,10,this.bounds.height);
+        window.addScrollBar(this.bounds.x, this.bounds.y, this.width, this.bounds.height);
     }
 
     @Override
@@ -25,7 +27,9 @@ public class ScrollBar extends Embellishment {
 
     @Override
     public void updateCursor(Cursor childBounds) {
-        this.bounds.width = childBounds.width > this.bounds.width ? childBounds.width : this.bounds.width;
-        this.bounds.height = childBounds.height > this.bounds.height ? childBounds.height : this.bounds.height;
+        this.bounds.width = childBounds.width;
+        this.bounds.height = childBounds.height;
+        this.bounds.x = this.bounds.width - this.width;
+        this.bounds.y = childBounds.y;
     }
 }

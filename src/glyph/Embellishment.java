@@ -11,15 +11,6 @@ abstract class Embellishment extends CompositeGlyph {
     @Override
     public void insert(Glyph glyph) {
         this.children.getFirst().insert(glyph);
-//        if(this.children.size() == 0) {
-//            this.children.add(glyph);
-//            glyph.setParent(this);
-//            Glyph root = goToRoot();
-//            root.compose();
-//        }
-//        else {
-//            this.children.get(0).insert(glyph, 0);
-//        }
     }
 
     @Override
