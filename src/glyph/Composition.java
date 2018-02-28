@@ -4,6 +4,7 @@ import window.Window;
 import compositor.*;
 
 //Composite(165).Component
+//Decorator(175).ConcreteComponent
 
 public abstract class Composition extends Glyph {
     private Compositor compositor;

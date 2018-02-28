@@ -2,6 +2,8 @@ package glyph;
 
 import window.Window;
 
+//Decorator(175).Decorator
+
 abstract class Embellishment extends CompositeGlyph {
 
     Embellishment(Window window) {

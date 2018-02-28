@@ -2,6 +2,8 @@ package glyph;
 
 import window.Window;
 
+//Decorator(175).ConcreteDecorator
+
 public class Border extends Embellishment {
 
     private int borderWidth = 1;

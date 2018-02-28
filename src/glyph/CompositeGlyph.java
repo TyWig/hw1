@@ -6,6 +6,7 @@ import java.util.Arrays;
 import java.util.LinkedList;
 
 //Composite(165).Component
+//Decorator(175).ConcreteComponent
 
 public abstract class CompositeGlyph extends Composition {
     LinkedList<Glyph> children;

@@ -3,6 +3,7 @@ package glyph;
 import window.*;
 
 //Composite(165).Component
+//Decorator(175).Component
 
 public abstract class Glyph {
     private Glyph parent;
