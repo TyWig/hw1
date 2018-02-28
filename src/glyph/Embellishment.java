@@ -9,28 +9,24 @@ abstract class Embellishment extends CompositeGlyph {
     }
 
     @Override
+    public void intersects(int x, int y) {
+        this.bounds.x = x;
+        this.bounds.y = y;
+        this.children.getFirst().intersects(x, y);
+    }
+
+    @Override
     public void insert(Glyph glyph) {
         this.children.getFirst().insert(glyph);
     }
 
     @Override
     public void remove(Glyph glyph) {
-        if(this.children.size() == 0) {
-            throw new UnsupportedOperationException();
-        } else {
-            this.children.getFirst().remove(glyph);
-        }
+        this.children.getFirst().remove(glyph);
     }
 
     @Override
     public Glyph child(int position) {
-        int childrenSize = this.children.size();
-        if(position >= childrenSize && childrenSize == 1) {
-            return this.children.getFirst().child(position);
-        } else if(childrenSize == 1) {
-            return this.children.getFirst();
-        } else {
-            return null;
-        }
+        return this.children.getFirst().child(position);
     }
 }

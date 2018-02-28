@@ -33,6 +33,8 @@ public abstract class CompositeGlyph extends Composition {
     @Override
     public void insert(Glyph[] glyphs) {
         this.children.addAll(Arrays.asList(glyphs));
+        for(Glyph glyph: glyphs)
+            glyph.setParent(this);
         Glyph root = goToRoot();
         root.compose();
     }

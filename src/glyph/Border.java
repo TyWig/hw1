@@ -4,11 +4,7 @@ import window.Window;
 
 public class Border extends Embellishment {
 
-    private int topMargin = 5;
-    private int leftMargin = 5;
-    private int rightMargin = 5;
-    private int bottomMargin = 5;
-    private int width = 1;
+    private int borderWidth = 1;
 
     public Border(Window window, Glyph glyph) {
         super(window);
@@ -16,7 +12,6 @@ public class Border extends Embellishment {
         glyph.setParent(this);
         Glyph root = goToRoot();
         root.compose();
-        //this.updateCursor(glyph.getBounds(window));
     }
 
     @Override
@@ -24,7 +19,7 @@ public class Border extends Embellishment {
         for(Glyph child: this.children){
             child.draw(window);
         }
-        window.addBorder(this.bounds.x,this.bounds.y, this.bounds.width, this.bounds.height, this.width);
+        window.addBorder(this.bounds.x,this.bounds.y, this.bounds.x + this.bounds.width + this.borderWidth, this.bounds.y + this.bounds.height + this.borderWidth, this.borderWidth);
     }
 
     @Override
@@ -32,15 +27,15 @@ public class Border extends Embellishment {
         Cursor bounds = new Cursor();
         bounds.height = this.bounds.height;
         bounds.width = this.bounds.width;
-        bounds.x = this.bounds.x + this.width;
-        bounds.y = this.bounds.y + this.width;
+        bounds.x = this.bounds.x + this.borderWidth;
+        bounds.y = this.bounds.y + this.borderWidth;
         return bounds;
     }
 
     @Override
     public void updateCursor(Cursor childBounds) {
-        this.bounds.width = childBounds.width > this.bounds.width ? childBounds.width : this.bounds.width;
-        this.bounds.height = childBounds.height > this.bounds.height ? childBounds.height : this.bounds.height;
-        this.bounds.x = childBounds.x;
+        this.children.getFirst().updateCursor(childBounds);
+        this.bounds.width += (childBounds.width > this.bounds.width ? childBounds.width : this.bounds.width);
+        this.bounds.height += (childBounds.height > this.bounds.height ? childBounds.height : this.bounds.height);
     }
 }

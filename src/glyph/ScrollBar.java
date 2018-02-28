@@ -8,8 +8,11 @@ public class ScrollBar extends Embellishment {
     public ScrollBar(Window window, Glyph glyph, int width) {
         super(window);
         this.width = width;
+        this.bounds.width = width;
         this.children.addFirst(glyph);
-        this.updateCursor(glyph.getBounds(window));
+        glyph.setParent(this);
+        Glyph root = goToRoot();
+        root.compose();
     }
 
     @Override
@@ -22,14 +25,20 @@ public class ScrollBar extends Embellishment {
 
     @Override
     public Cursor getBounds(Window window) {
-        return null;
+        Cursor bounds = new Cursor();
+        bounds.height = this.bounds.height;
+        bounds.width = this.width;
+        bounds.x = this.bounds.x;
+        bounds.y = this.bounds.y;
+        return bounds;
     }
 
     @Override
     public void updateCursor(Cursor childBounds) {
         this.bounds.width = childBounds.width;
         this.bounds.height = childBounds.height;
-        this.bounds.x = this.bounds.width - this.width;
+        this.bounds.x = childBounds.width;
         this.bounds.y = childBounds.y;
+        this.children.getFirst().updateCursor(this.bounds);
     }
 }

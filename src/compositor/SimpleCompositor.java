@@ -33,7 +33,7 @@ public class SimpleCompositor implements Compositor {
 
             Cursor childBounds = next.getBounds(this.window);
             this.composition.updateCursor(childBounds);
-            newBounds = composition.getBounds(this.window);
+            newBounds = this.composition.getBounds(this.window);
 
             childIndex++;
             next = composition.child(childIndex);
