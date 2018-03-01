@@ -27,9 +27,10 @@ public class ScrollBar extends Embellishment {
 
     @Override
     public Cursor getBounds(Window window) {
+        Cursor childBounds = this.children.getFirst().getBounds(window);
         Cursor bounds = new Cursor();
         bounds.height = this.bounds.height;
-        bounds.width = this.width;
+        bounds.width = this.width + childBounds.width;
         bounds.x = this.bounds.x;
         bounds.y = this.bounds.y;
         return bounds;
