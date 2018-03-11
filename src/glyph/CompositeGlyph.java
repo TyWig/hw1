@@ -9,7 +9,7 @@ import java.util.LinkedList;
 //Decorator(175).ConcreteComponent
 
 public abstract class CompositeGlyph extends Composition {
-    LinkedList<Glyph> children;
+    protected LinkedList<Glyph> children;
 
     CompositeGlyph(Window window) {
         super(window);

@@ -1,0 +1,13 @@
+package widget;
+
+import glyph.Glyph;
+import glyph.Label;
+import window.Window;
+
+class RedLabel extends Label {
+
+    RedLabel(Window window) {
+        super(window);
+        this.myColor = "Red";
+    }
+}
