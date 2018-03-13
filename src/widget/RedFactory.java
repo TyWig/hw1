@@ -16,12 +16,12 @@ class RedFactory extends GUIFactory {
     }
 
     @Override
-    public Button createButton(Window window) {
+    public Button factoryCreateButton(Window window) {
         return new RedButton(window);
     }
 
     @Override
-    public Label createLabel(Window window) {
+    public Label factoryCreateLabel(Window window) {
         return new RedLabel(window);
     }
 }

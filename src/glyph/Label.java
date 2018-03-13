@@ -12,6 +12,9 @@ public abstract class Label extends CompositeGlyph {
     @Override
     public void draw(Window window) {
         window.drawLabel(this.bounds.x, this.bounds.y, this.bounds.width, this.bounds.height, this.myColor);
+        for(Glyph child: this.children) {
+            child.draw(window);
+        }
     }
 
     @Override

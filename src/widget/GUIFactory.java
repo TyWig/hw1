@@ -5,7 +5,15 @@ import glyph.Label;
 import window.Window;
 
 public abstract class GUIFactory {
+    private static GUIFactory instance;
+
     public static GUIFactory getInstance() {
+        if(instance == null)
+            instance = initializeInstance();
+        return instance;
+    }
+
+    private static GUIFactory initializeInstance() {
         String s = System.getenv("LexiWidget");
         if(s == null)
             return RedFactory.instance();
@@ -15,8 +23,14 @@ public abstract class GUIFactory {
             default: return RedFactory.instance();
         }
     }
+    protected abstract Button factoryCreateButton(Window window);
+    protected abstract Label factoryCreateLabel(Window window);
 
-    
-    public abstract Button createButton(Window window);
-    public abstract Label createLabel(Window window);
+    public final Button createButton(Window window) {
+        return factoryCreateButton(window);
+    }
+
+    public final Label createLabel(Window window) {
+        return factoryCreateLabel(window);
+    }
 }

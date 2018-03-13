@@ -1,6 +1,5 @@
 package widget;
 
-import glyph.Glyph;
 import glyph.Label;
 import window.Window;
 
