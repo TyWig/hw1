@@ -2,6 +2,9 @@ package glyph;
 
 import window.Window;
 
+//FactoryMethod(107).Product
+//AbstractFactory(87).AbstractProduct
+
 public abstract class Label extends CompositeGlyph {
     protected String myColor;
 

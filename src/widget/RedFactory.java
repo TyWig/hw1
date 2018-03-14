@@ -4,6 +4,9 @@ import glyph.Button;
 import glyph.Label;
 import window.Window;
 
+//FactoryMethod(107).ConcreteCreator
+//AbstractFactory(87).ConcreteFactory
+
 class RedFactory extends GUIFactory {
     private static RedFactory instance;
 

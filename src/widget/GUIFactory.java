@@ -4,6 +4,10 @@ import glyph.Button;
 import glyph.Label;
 import window.Window;
 
+//AbstractFactory(87).AbstractFactory
+//FactoryMethod(107).Creator
+//Singleton(127).Singleton
+
 public abstract class GUIFactory {
     private static GUIFactory instance;
 
