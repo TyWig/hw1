@@ -3,16 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="03d92ae7-d800-41d3-9d0b-69d34c941a93" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/Lexi.java" afterPath="$PROJECT_DIR$/src/Lexi.java" />
-      <change beforePath="$PROJECT_DIR$/src/glyph/Button.java" afterPath="$PROJECT_DIR$/src/glyph/Button.java" />
-      <change beforePath="$PROJECT_DIR$/src/glyph/Label.java" afterPath="$PROJECT_DIR$/src/glyph/Label.java" />
-      <change beforePath="$PROJECT_DIR$/src/widget/GUIFactory.java" afterPath="$PROJECT_DIR$/src/widget/GUIFactory.java" />
-      <change beforePath="$PROJECT_DIR$/src/widget/GreenButton.java" afterPath="$PROJECT_DIR$/src/widget/GreenButton.java" />
-      <change beforePath="$PROJECT_DIR$/src/widget/GreenFactory.java" afterPath="$PROJECT_DIR$/src/widget/GreenFactory.java" />
-      <change beforePath="$PROJECT_DIR$/src/widget/GreenLabel.java" afterPath="$PROJECT_DIR$/src/widget/GreenLabel.java" />
-      <change beforePath="$PROJECT_DIR$/src/widget/RedButton.java" afterPath="$PROJECT_DIR$/src/widget/RedButton.java" />
-      <change beforePath="$PROJECT_DIR$/src/widget/RedFactory.java" afterPath="$PROJECT_DIR$/src/widget/RedFactory.java" />
-      <change beforePath="$PROJECT_DIR$/src/widget/RedLabel.java" afterPath="$PROJECT_DIR$/src/widget/RedLabel.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -74,7 +64,7 @@
       <file leaf-file-name="Lexi.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Lexi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-132">
+            <state relative-caret-position="30">
               <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
               <folding>
                 <element signature="e#0#4443#0" expanded="true" />
@@ -221,9 +211,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="y" value="23" />
-    <option name="width" value="840" />
+    <option name="width" value="1680" />
     <option name="height" value="978" />
   </component>
   <component name="ProjectView">
@@ -373,7 +363,7 @@
       <workItem from="1520476507757" duration="931000" />
       <workItem from="1520546265207" duration="3987000" />
       <workItem from="1520811350324" duration="5193000" />
-      <workItem from="1520964338091" duration="8808000" />
+      <workItem from="1520964338091" duration="8839000" />
     </task>
     <task id="LOCAL-00001" summary="WIP: Idk it kinda works.">
       <created>1518540858473</created>
@@ -410,11 +400,18 @@
       <option name="project" value="LOCAL" />
       <updated>1520964438947</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Done with HW3">
+      <created>1520995045462</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1520995045462</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40225000" />
+    <option name="totallyTimeSpent" value="40256000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -426,7 +423,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="978" extended-state="6" />
+    <frame x="0" y="23" width="1680" height="978" extended-state="1" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842582" sideWeight="0.4957265" order="6" side_tool="false" content_ui="tabs" />
@@ -1127,7 +1124,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Lexi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-132">
+        <state relative-caret-position="30">
           <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
           <folding>
             <element signature="e#0#4443#0" expanded="true" />
