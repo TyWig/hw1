@@ -3,11 +3,11 @@ package window;
 //FactoryMethod(107).ConcreteCreator
 //AbstractFactory(87).ConcreteFactory
 
-class SwingWindowFactory extends WindowFactory {
+class SwingWindowFactory extends WindowImpFactory {
 
     private SwingWindowFactory() { }
 
-    static WindowFactory instance() {
+    static WindowImpFactory instance() {
         return new SwingWindowFactory();
     }
 

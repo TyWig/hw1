@@ -4,16 +4,16 @@ package window;
 //FactoryMethod(107).Creator
 //Singleton(127).Singleton
 
-public abstract class WindowFactory {
-    private static WindowFactory instance;
+public abstract class WindowImpFactory {
+    private static WindowImpFactory instance;
 
-    public static WindowFactory getInstance() {
+    public static WindowImpFactory getInstance() {
         if(instance == null)
             instance = initializeInstance();
         return instance;
     }
 
-    private static WindowFactory initializeInstance() {
+    private static WindowImpFactory initializeInstance() {
         String s = System.getenv("LexiWindow");
         if (s == null)
             return SwingWindowFactory.instance();

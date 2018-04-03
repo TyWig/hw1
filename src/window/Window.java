@@ -9,7 +9,7 @@ public abstract class Window {
     private Glyph contents;
 
     public Window(String title) {
-        window = WindowFactory.getInstance().createWindow(title, this);
+        window = WindowImpFactory.getInstance().createWindow(title, this);
     }
 
     public void draw() {
