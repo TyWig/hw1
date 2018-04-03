@@ -1,6 +1,8 @@
 // Composite(163): Client
 // AbstractFactory(87).Client
 // FactoryMethod(107).Client
+// Bridge(151).Client
+
 import glyph.Character;
 import widget.GUIFactory;
 import window.*;
@@ -13,7 +15,7 @@ import java.util.Random;
 public class Lexi {
 
     public static void main(String[] args) {
-        Window window = new SwingWindow("Hello");
+        Window window = new Window("Lexi");
         GUIFactory factory = GUIFactory.getInstance();
         String[] words = {"PQ", "ab", "abc d e fg h", "dogs"};
         Glyph doc = new Column(window);
