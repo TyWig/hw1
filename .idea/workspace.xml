@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03d92ae7-d800-41d3-9d0b-69d34c941a93" name="Default" comment="Done with HW3">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/window/AwtWindow.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/window/AwtWindowFactory.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/window/SwingWindowFactory.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/window/WindowFactory.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/window/WindowImp.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/Lexi.java" afterPath="$PROJECT_DIR$/src/Lexi.java" />
-      <change beforePath="$PROJECT_DIR$/src/window/SwingWindow.java" afterPath="$PROJECT_DIR$/src/window/SwingWindow.java" />
-      <change beforePath="$PROJECT_DIR$/src/window/Window.java" afterPath="$PROJECT_DIR$/src/window/Window.java" />
+      <change beforePath="$PROJECT_DIR$/UML.png" afterPath="$PROJECT_DIR$/src/UML.png" />
+      <change beforePath="$PROJECT_DIR$/src/build.sh" afterPath="$PROJECT_DIR$/src/build.sh" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,10 +18,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UML.png" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../../../UML.png">
+      <file leaf-file-name="UML.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/UML.png">
           <provider selected="true" editor-type-id="images">
             <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/build.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="clean.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/clean.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -117,6 +130,7 @@
         <option value="$PROJECT_DIR$/src/window/AwtWindowFactory.java" />
         <option value="$PROJECT_DIR$/src/window/SwingWindow.java" />
         <option value="$PROJECT_DIR$/src/window/Window.java" />
+        <option value="$PROJECT_DIR$/src/build.sh" />
       </list>
     </option>
   </component>
@@ -162,25 +176,7 @@
               <item name="hw1" type="b2602c69:ProjectViewProjectNode" />
               <item name="hw1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="compositor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hw1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hw1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="glyph" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hw1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hw1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="widget" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hw1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hw1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="window" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -200,6 +196,12 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.folding" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -282,7 +284,7 @@
       <workItem from="1522254473501" duration="220000" />
       <workItem from="1522599055751" duration="115000" />
       <workItem from="1522629338637" duration="10745000" />
-      <workItem from="1522768890051" duration="1409000" />
+      <workItem from="1522768890051" duration="1538000" />
     </task>
     <task id="LOCAL-00001" summary="WIP: Idk it kinda works.">
       <created>1518540858473</created>
@@ -330,7 +332,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53409000" />
+    <option name="totallyTimeSpent" value="53538000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -343,7 +345,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="840" height="978" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842582" sideWeight="0.4957265" order="6" side_tool="false" content_ui="tabs" />
@@ -355,7 +356,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2344281" sideWeight="0.44505495" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22763307" sideWeight="0.55494505" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3238958" sideWeight="0.47008547" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3238958" sideWeight="0.47008547" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46616542" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -407,6 +408,9 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.sh" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -893,14 +897,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/build.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/widget/RedFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -921,14 +917,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clean.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -997,7 +985,7 @@
         <state relative-caret-position="-86">
           <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1007,14 +995,9 @@
         <state relative-caret-position="186">
           <caret line="26" column="27" lean-forward="true" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UML.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
       </provider>
     </entry>
     <entry file="uml://JAVA/widget.RedButton">
@@ -1093,9 +1076,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../UML.png">
+    <entry file="file://$PROJECT_DIR$/src/UML.png">
       <provider selected="true" editor-type-id="images">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UML.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clean.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/build.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>
