@@ -4,7 +4,7 @@ import glyph.*;
 
 // Bridge(151).Abstraction
 
-public class Window {
+public abstract class Window {
     private WindowImp window;
     private Glyph contents;
 
