@@ -1,19 +1,44 @@
 package window;
 
+import command.*;
 import glyph.*;
+
+import java.util.Iterator;
 
 // Bridge(151).Abstraction
 
 public abstract class Window {
     private WindowImp window;
     private Glyph contents;
+    private KeyMap keyMap;
 
     public Window(String title) {
         window = WindowImpFactory.getInstance().createWindow(title, this);
+//        window.setContents();
+        keyMap = new KeyMap();
+        initKeyMap();
+    }
+
+    private void initKeyMap() {
+        keyMap.put('i', new IncreaseFontSizeCommand(this));
+        keyMap.put('d', new DecreaseFontSizeCommand(this));
+        keyMap.put('r', new RedoCommand(this));
+        keyMap.put('u', new UndoCommand(this));
     }
 
     public void draw() {
         contents.draw(this);
+    }
+
+    public void key(char c) {
+        Command tryGet = keyMap.get(c);
+        if(tryGet != null) {
+            tryGet.execute();
+        }
+    }
+
+    public void click(int x, int y) {
+        Iterator<Glyph> it = this.contents.getIterator();
     }
 
     // Functions that are forwarded to WindowImp
@@ -44,6 +69,15 @@ public abstract class Window {
     }
     public void drawLabel(int x, int y, int width, int height, String color) {
         window.drawLabel(x, y, width, height, color);
+    }
+    public int getFontSize() {
+        return window.getFontSize();
+    }
+    public void setFontSize(int size) {
+        window.setFontSize(size);
+    }
+    public void repaint() {
+        window.repaint();
     }
 
 }

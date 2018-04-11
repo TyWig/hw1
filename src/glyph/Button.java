@@ -1,15 +1,26 @@
 package glyph;
 
 import window.Window;
+import command.Command;
 
 //FactoryMethod(107).Product
 //AbstractFactory(87).AbstractProduct
 
 public abstract class Button extends CompositeGlyph {
     protected String myColor;
+    protected Command command;
 
     public Button(Window window) {
         super(window);
+    }
+
+    public void setCommand(Command command) {
+        this.command = command;
+    }
+
+    @Override
+    public boolean find(int x, int y) {
+        return false;
     }
 
     @Override

@@ -3,6 +3,7 @@ package glyph;
 import window.Window;
 
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.LinkedList;
 
 //Composite(165).Component
@@ -14,6 +15,11 @@ public abstract class CompositeGlyph extends Composition {
     CompositeGlyph(Window window) {
         super(window);
         this.children = new LinkedList<>();
+    }
+
+    @Override
+    public Iterator<Glyph> getIterator() {
+        return this.children.iterator();
     }
 
     @Override

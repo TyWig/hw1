@@ -2,6 +2,8 @@ package glyph;
 
 import window.Window;
 
+import java.util.Iterator;
+
 //Composite(165).Leaf
 
 public class Character extends Glyph {
@@ -21,6 +23,16 @@ public class Character extends Glyph {
         this.bounds.width = bounds.width;
         this.bounds.height = bounds.height;
         return bounds;
+    }
+
+    @Override
+    public boolean find(int x, int y) {
+        return false;
+    }
+
+    @Override
+    public Iterator<Glyph> getIterator() {
+        return null;
     }
 
     @Override
