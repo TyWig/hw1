@@ -14,8 +14,8 @@ public class Rectangle extends Glyph {
     }
 
     @Override
-    public boolean find(int x, int y) {
-        return false;
+    public Glyph find(int x, int y) {
+        return null;
     }
 
     @Override

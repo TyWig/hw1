@@ -10,17 +10,17 @@ public class RedoCommand extends Command {
 
     @Override
     public boolean isUndoable() {
-        return true;
+        return false;
     }
 
     @Override
     public void execute() {
-        System.out.println(this.getClass().toString() + " It worked");
+        window.redoCommand();
     }
 
     @Override
     public void unexecute() {
-        
+        window.redoCommand();
     }
 
     @Override

@@ -45,7 +45,7 @@ public abstract class Glyph {
     }
 
 
-    public abstract boolean find(int x, int y);
+    public abstract Glyph find(int x, int y);
     public abstract Iterator<Glyph> getIterator();
     public abstract void draw(Window window);
     public abstract void compose();

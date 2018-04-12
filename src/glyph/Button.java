@@ -20,7 +20,7 @@ public abstract class Button extends CompositeGlyph {
     }
 
     @Override
-    public boolean find(int x, int y) {
+    public Glyph find(int x, int y) {
         int x1 = this.bounds.x;
         int x2 = this.bounds.x + this.bounds.width;
         int y1 = this.bounds.y;
@@ -29,7 +29,11 @@ public abstract class Button extends CompositeGlyph {
         boolean isInX = (x >= x1 && x <= x2);
         boolean isInY = (y >= y1 && y <= y2);
 
-        return isInX && isInY;
+        if(isInX && isInY) {
+            return this;
+        } else {
+            return null;
+        }
     }
 
     @Override

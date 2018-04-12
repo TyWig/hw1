@@ -19,14 +19,14 @@ public abstract class CompositeGlyph extends Composition {
     }
 
     @Override
-    public boolean find(int x, int y) {
+    public Glyph find(int x, int y) {
         for(Glyph child: this.children) {
-            if(child.find(x, y)) {
-
-
+            Glyph found = child.find(x,y);
+            if(found != null) {
+                return found;
             }
         }
-        return false;
+        return null;
     }
 
     @Override

@@ -35,12 +35,21 @@ public abstract class Window {
         Command tryGet = keyMap.get(c);
         if(tryGet != null) {
             tryGet.execute();
-            commandHistory.add(tryGet.clone());
+            if(tryGet.isUndoable()) {
+                commandHistory.add(tryGet.clone());
+            }
         }
     }
 
     public void click(int x, int y) {
-        Iterator<Glyph> it = this.contents.getIterator();
+        Glyph found = contents.find(x,y);
+        if(found != null) {
+            Command command = found.click();
+            if(command != null) {
+                command.execute();
+                commandHistory.add(command);
+            }
+        }
     }
 
     // Functions that are forwarded to WindowImp
@@ -81,6 +90,12 @@ public abstract class Window {
     public void repaint() {
         this.contents.compose();
         window.repaint();
+    }
+    public void undoCommand() {
+        commandHistory.undo();
+    }
+    public void redoCommand() {
+        commandHistory.redo();
     }
 
 }
