@@ -14,6 +14,11 @@ public class Rectangle extends Glyph {
     }
 
     @Override
+    public boolean find(int x, int y) {
+        return false;
+    }
+
+    @Override
     public Iterator<Glyph> getIterator() {
         return null;
     }

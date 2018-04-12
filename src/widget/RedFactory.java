@@ -1,5 +1,6 @@
 package widget;
 
+import command.Command;
 import glyph.Button;
 import glyph.Label;
 import window.Window;
@@ -19,8 +20,13 @@ class RedFactory extends GUIFactory {
     }
 
     @Override
-    public Button factoryCreateButton(Window window) {
+    protected Button factoryCreateButton(Window window) {
         return new RedButton(window);
+    }
+
+    @Override
+    public Button factoryCreateButton(Window window, Command command) {
+        return new RedButton(window, command);
     }
 
     @Override

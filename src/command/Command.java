@@ -9,6 +9,7 @@ public abstract class Command {
         this.window = window;
     }
 
+    public abstract boolean isUndoable();
     public abstract void execute();
     public abstract void unexecute();
     public abstract Command clone();

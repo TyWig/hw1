@@ -9,13 +9,18 @@ public class RedoCommand extends Command {
     }
 
     @Override
+    public boolean isUndoable() {
+        return true;
+    }
+
+    @Override
     public void execute() {
         System.out.println(this.getClass().toString() + " It worked");
     }
 
     @Override
     public void unexecute() {
-
+        
     }
 
     @Override

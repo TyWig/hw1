@@ -9,6 +9,11 @@ public class UndoCommand extends Command {
     }
 
     @Override
+    public boolean isUndoable() {
+        return false;
+    }
+
+    @Override
     public void execute() {
         System.out.println(this.getClass().toString() + " It worked");
     }

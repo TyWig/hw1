@@ -1,5 +1,6 @@
 package widget;
 
+import command.Command;
 import glyph.Button;
 import glyph.Label;
 import window.Window;
@@ -27,8 +28,13 @@ public abstract class GUIFactory {
             default: return RedFactory.instance();
         }
     }
+    protected abstract Button factoryCreateButton(Window window, Command command);
     protected abstract Button factoryCreateButton(Window window);
     protected abstract Label factoryCreateLabel(Window window);
+
+    public final Button createButton(Window window, Command command) {
+        return factoryCreateButton(window, command);
+    }
 
     public final Button createButton(Window window) {
         return factoryCreateButton(window);

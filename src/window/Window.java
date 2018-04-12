@@ -11,11 +11,12 @@ public abstract class Window {
     private WindowImp window;
     private Glyph contents;
     private KeyMap keyMap;
+    private CommandHistory commandHistory;
 
     public Window(String title) {
         window = WindowImpFactory.getInstance().createWindow(title, this);
-//        window.setContents();
         keyMap = new KeyMap();
+        commandHistory = CommandHistory.getInstance();
         initKeyMap();
     }
 
@@ -34,6 +35,7 @@ public abstract class Window {
         Command tryGet = keyMap.get(c);
         if(tryGet != null) {
             tryGet.execute();
+            commandHistory.add(tryGet.clone());
         }
     }
 
@@ -77,6 +79,7 @@ public abstract class Window {
         window.setFontSize(size);
     }
     public void repaint() {
+        this.contents.compose();
         window.repaint();
     }
 

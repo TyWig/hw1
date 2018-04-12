@@ -71,7 +71,7 @@ public class GlyphGenerator {
         } else if(randomNum % 3 == 0) {
             return new Rectangle(rand.nextInt(30)+1, rand.nextInt(30)+1);
         } else {
-            Glyph button = this.factory.createButton(window);
+            Glyph button = this.factory.createButton(window, null);
             button.insert(new Row(randomString(rand.nextInt(10)), window));
             return button;
         }

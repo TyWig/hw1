@@ -8,19 +8,33 @@ import command.Command;
 
 public abstract class Button extends CompositeGlyph {
     protected String myColor;
-    protected Command command;
+    private Command command;
+
+    public Button(Window window, Command command) {
+        super(window);
+        this.command = command;
+    }
 
     public Button(Window window) {
         super(window);
     }
 
-    public void setCommand(Command command) {
-        this.command = command;
+    @Override
+    public boolean find(int x, int y) {
+        int x1 = this.bounds.x;
+        int x2 = this.bounds.x + this.bounds.width;
+        int y1 = this.bounds.y;
+        int y2 = this.bounds.y + this.bounds.height;
+
+        boolean isInX = (x >= x1 && x <= x2);
+        boolean isInY = (y >= y1 && y <= y2);
+
+        return isInX && isInY;
     }
 
     @Override
-    public boolean find(int x, int y) {
-        return false;
+    public Command click() {
+        return this.command;
     }
 
     @Override

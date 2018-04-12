@@ -3,6 +3,8 @@
 // FactoryMethod(107).Client
 // Bridge(151).Client
 
+import command.IncreaseFontSizeCommand;
+import command.SetFontSizeCommand;
 import glyph.Character;
 import widget.GUIFactory;
 import window.*;
@@ -40,7 +42,20 @@ public class Lexi {
 
         Glyph button = factory.createButton(window);
         button.insert(new Row(words[0], window));
-        doc.insert(new Glyph[]{row1, row2, button});
+
+        Glyph row = new Row(window);
+        Glyph increaseButton = factory.createButton(window, new IncreaseFontSizeCommand(window));
+        increaseButton.insert(new Row("+", window));
+        Glyph decreaseButton = factory.createButton(window, new IncreaseFontSizeCommand(window));
+        decreaseButton.insert(new Row("-", window));
+        Glyph setTo14Button = factory.createButton(window, new SetFontSizeCommand(window, 14));
+        setTo14Button.insert(new Row("14", window));
+        Glyph setTo20Button = factory.createButton(window, new SetFontSizeCommand(window, 20));
+        setTo20Button.insert(new Row("20", window));
+        row.insert(new Glyph[]{increaseButton, decreaseButton, setTo14Button, setTo20Button});
+
+
+        doc.insert(new Glyph[]{row1, row2, button, row});
 
         window.setContents(doc);
     }

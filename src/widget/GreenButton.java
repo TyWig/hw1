@@ -1,5 +1,6 @@
 package widget;
 
+import command.Command;
 import glyph.Button;
 import window.Window;
 
@@ -7,6 +8,11 @@ import window.Window;
 //AbstractFactory(87).ConcreteProduct
 
 class GreenButton extends Button {
+
+    GreenButton(Window window, Command command) {
+        super(window, command);
+        this.myColor = "Green";
+    }
 
     GreenButton(Window window) {
         super(window);

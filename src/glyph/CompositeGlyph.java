@@ -1,5 +1,6 @@
 package glyph;
 
+import command.Command;
 import window.Window;
 
 import java.util.Arrays;
@@ -15,6 +16,17 @@ public abstract class CompositeGlyph extends Composition {
     CompositeGlyph(Window window) {
         super(window);
         this.children = new LinkedList<>();
+    }
+
+    @Override
+    public boolean find(int x, int y) {
+        for(Glyph child: this.children) {
+            if(child.find(x, y)) {
+
+
+            }
+        }
+        return false;
     }
 
     @Override

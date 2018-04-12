@@ -1,5 +1,6 @@
 package glyph;
 
+import command.Command;
 import window.*;
 import java.util.Iterator;
 
@@ -33,24 +34,18 @@ public abstract class Glyph {
         this.bounds.y = y;
     }
 
+    public Command click() {
+        return null;
+    }
+
     @Override
     public String toString()
     {
         return String.format("Type: %s\tX: %d\tY: %d\tWidth: %d\tHeight: %d\n", this.getClass().toString(), this.bounds.x, this.bounds.y, this.bounds.width, this.bounds.height );
     }
 
-    public boolean find(int x, int y) {
-        int x1 = this.bounds.x;
-        int x2 = this.bounds.x + this.bounds.width;
-        int y1 = this.bounds.y;
-        int y2 = this.bounds.y + this.bounds.height;
 
-        boolean isInX = (x >= x1 && x <= x2);
-        boolean isInY = (y >= y1 && y <= y2);
-
-        return isInX && isInY;
-    }
-
+    public abstract boolean find(int x, int y);
     public abstract Iterator<Glyph> getIterator();
     public abstract void draw(Window window);
     public abstract void compose();
