@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03d92ae7-d800-41d3-9d0b-69d34c941a93" name="Default" comment="Done with HW3">
-      <change beforePath="$PROJECT_DIR$/src/Lexi.java" afterPath="$PROJECT_DIR$/src/Lexi.java" />
-      <change beforePath="$PROJECT_DIR$/src/command/Command.java" afterPath="$PROJECT_DIR$/src/command/Command.java" />
-      <change beforePath="$PROJECT_DIR$/src/command/CommandHistory.java" afterPath="$PROJECT_DIR$/src/command/CommandHistory.java" />
-      <change beforePath="$PROJECT_DIR$/src/command/DecreaseFontSizeCommand.java" afterPath="$PROJECT_DIR$/src/command/DecreaseFontSizeCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/command/IncreaseFontSizeCommand.java" afterPath="$PROJECT_DIR$/src/command/IncreaseFontSizeCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/command/RedoCommand.java" afterPath="$PROJECT_DIR$/src/command/RedoCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/command/SetFontSizeCommand.java" afterPath="$PROJECT_DIR$/src/command/SetFontSizeCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/command/UndoCommand.java" afterPath="$PROJECT_DIR$/src/command/UndoCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/glyph/Button.java" afterPath="$PROJECT_DIR$/src/glyph/Button.java" />
-      <change beforePath="$PROJECT_DIR$/src/glyph/CompositeGlyph.java" afterPath="$PROJECT_DIR$/src/glyph/CompositeGlyph.java" />
-      <change beforePath="$PROJECT_DIR$/src/glyph/Glyph.java" afterPath="$PROJECT_DIR$/src/glyph/Glyph.java" />
-      <change beforePath="$PROJECT_DIR$/src/window/ApplicationWindow.java" afterPath="$PROJECT_DIR$/src/window/ApplicationWindow.java" />
-      <change beforePath="$PROJECT_DIR$/src/window/Window.java" afterPath="$PROJECT_DIR$/src/window/Window.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/build.sh" afterPath="$PROJECT_DIR$/src/build.sh" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,108 +18,112 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="JAVA/widget.GUIFactory" pinned="false" current-in-tab="true">
+      <file leaf-file-name="JAVA/widget.GUIFactory" pinned="false" current-in-tab="false">
         <entry file="uml://JAVA/widget.GUIFactory">
           <provider selected="true" editor-type-id="UmlEditorProvider">
             <state>
               <ID>JAVA</ID>
               <OriginalElement>widget.GUIFactory</OriginalElement>
               <nodes>
-                <node x="1947.0" y="2354.0">window.SwingWindowFactory</node>
+                <node x="1590.0" y="2354.0">window.SwingWindowFactory</node>
                 <node x="496.0" y="2653.0">command.KeyMap</node>
-                <node x="1885.875" y="0.0">window.WindowImp</node>
-                <node x="262.0" y="1103.5">glyph.Embellishment</node>
-                <node x="245.0" y="2400.0">command.DecreaseFontSizeCommand</node>
-                <node x="1265.875" y="1383.0">widget.RedLabel</node>
-                <node x="1318.25" y="433.0">glyph.Character</node>
-                <node x="647.75" y="1372.0">widget.RedButton</node>
-                <node x="1590.0" y="2354.0">window.AwtWindowFactory</node>
+                <node x="1874.625" y="0.0">window.WindowImp</node>
+                <node x="144.75" y="1103.5">glyph.Embellishment</node>
+                <node x="0.0" y="2400.0">command.DecreaseFontSizeCommand</node>
+                <node x="758.0" y="1383.0">widget.RedLabel</node>
+                <node x="1141.625" y="433.0">glyph.Character</node>
+                <node x="996.625" y="1372.0">widget.RedButton</node>
+                <node x="1947.0" y="2354.0">window.AwtWindowFactory</node>
                 <node x="38.0" y="2090.0">window.ApplicationWindow</node>
-                <node x="110.75" y="1338.0">glyph.ScrollBar</node>
+                <node x="262.0" y="1338.0">glyph.ScrollBar</node>
                 <node x="306.0" y="2653.0">glyph.Cursor</node>
-                <node x="1317.0" y="2433.5">command.UndoCommand</node>
+                <node x="371.0" y="2433.5">command.UndoCommand</node>
                 <node x="0.0" y="2653.0">command.CommandHistory</node>
-                <node x="751.0" y="1802.0">widget.RedFactory</node>
-                <node x="0.0" y="1114.5">glyph.Column</node>
+                <node x="359.0" y="1802.0">widget.RedFactory</node>
+                <node x="1420.625" y="1114.5">glyph.Column</node>
                 <node x="2346.0" y="2186.0">compositor.Compositor</node>
                 <node x="1768.5" y="2186.0">window.WindowImpFactory</node>
-                <node x="1472.875" y="1383.0">widget.GreenLabel</node>
-                <node x="822.25" y="532.5">glyph.Composition</node>
-                <node x="385.75" y="1338.0">glyph.Border</node>
-                <node x="616.0" y="2400.0">command.SetFontSizeCommand</node>
+                <node x="537.0" y="1383.0">widget.GreenLabel</node>
+                <node x="907.625" y="532.5">glyph.Composition</node>
+                <node x="0.0" y="1338.0">glyph.Border</node>
+                <node x="985.0" y="2400.0">command.SetFontSizeCommand</node>
                 <node x="555.0" y="1524.0">widget.GUIFactory</node>
-                <node x="1056.25" y="444.5">glyph.Rectangle</node>
-                <node x="1345.375" y="1103.0">glyph.Label</node>
+                <node x="1403.625" y="444.5">glyph.Rectangle</node>
+                <node x="623.5" y="1103.0">glyph.Label</node>
                 <node x="824.0" y="2653.0">Lexi</node>
                 <node x="0.0" y="1524.0">window.Window</node>
-                <node x="806.75" y="1059.0">glyph.Button</node>
-                <node x="2052.875" y="322.0">window.AwtWindow</node>
-                <node x="1071.75" y="1114.5">glyph.Row</node>
-                <node x="1056.25" y="0.0">glyph.Glyph</node>
-                <node x="951.0" y="2400.0">command.IncreaseFontSizeCommand</node>
-                <node x="359.0" y="1802.0">widget.GreenFactory</node>
-                <node x="1718.875" y="322.0">window.SwingWindow</node>
+                <node x="1155.625" y="1059.0">glyph.Button</node>
+                <node x="1707.625" y="322.0">window.AwtWindow</node>
+                <node x="893.625" y="1114.5">glyph.Row</node>
+                <node x="1141.625" y="0.0">glyph.Glyph</node>
+                <node x="619.0" y="2400.0">command.IncreaseFontSizeCommand</node>
+                <node x="751.0" y="1802.0">widget.GreenFactory</node>
+                <node x="2041.625" y="322.0">window.SwingWindow</node>
                 <node x="2329.0" y="2310.0">compositor.SimpleCompositor</node>
-                <node x="935.75" y="1372.0">widget.GreenButton</node>
-                <node x="811.75" y="779.0">glyph.CompositeGlyph</node>
-                <node x="0.0" y="2433.5">command.RedoCommand</node>
-                <node x="676.5" y="2186.0">command.Command</node>
+                <node x="1284.625" y="1372.0">widget.GreenButton</node>
+                <node x="897.125" y="779.0">glyph.CompositeGlyph</node>
+                <node x="1320.0" y="2433.5">command.RedoCommand</node>
+                <node x="695.0" y="2186.0">command.Command</node>
               </nodes>
               <notes />
               <edges>
                 <edge source="glyph.ScrollBar" target="glyph.Embellishment">
                   <point x="0.0" y="-70.5" />
-                  <point x="238.25" y="1313.0" />
-                  <point x="317.25" y="1313.0" />
-                  <point x="-55.25" y="70.0" />
+                  <point x="389.5" y="1313.0" />
+                  <point x="310.5" y="1313.0" />
+                  <point x="55.25" y="70.0" />
                 </edge>
                 <edge source="command.SetFontSizeCommand" target="command.Command">
                   <point x="0.0" y="-104.0" />
-                  <point x="0.0" y="82.0" />
+                  <point x="1142.5" y="2380.0" />
+                  <point x="830.8" y="2380.0" />
+                  <point x="38.799999999999955" y="82.0" />
                 </edge>
                 <edge source="glyph.Rectangle" target="glyph.Glyph">
                   <point x="0.0" y="-136.5" />
-                  <point x="0.0" y="191.5" />
+                  <point x="1524.625" y="408.0" />
+                  <point x="1343.2916666666667" y="408.0" />
+                  <point x="80.66666666666674" y="191.5" />
                 </edge>
                 <edge source="window.AwtWindow" target="window.WindowImp">
                   <point x="0.0" y="-269.0" />
-                  <point x="2209.875" y="297.0" />
-                  <point x="2121.375" y="297.0" />
-                  <point x="78.5" y="136.0" />
+                  <point x="1864.625" y="297.0" />
+                  <point x="1953.125" y="297.0" />
+                  <point x="-78.5" y="136.0" />
                 </edge>
                 <edge source="glyph.Button" target="glyph.CompositeGlyph">
                   <point x="0.0" y="-114.5" />
-                  <point x="0.0" y="115.0" />
+                  <point x="1278.125" y="1039.0" />
+                  <point x="1061.625" y="1039.0" />
+                  <point x="47.0" y="115.0" />
                 </edge>
                 <edge source="widget.RedButton" target="glyph.Button">
                   <point x="0.0" y="-36.5" />
-                  <point x="781.75" y="1313.0" />
-                  <point x="868.0" y="1313.0" />
+                  <point x="1130.625" y="1313.0" />
+                  <point x="1216.875" y="1313.0" />
                   <point x="-61.25" y="114.5" />
                 </edge>
                 <edge source="command.DecreaseFontSizeCommand" target="command.Command">
                   <point x="0.0" y="-104.0" />
-                  <point x="420.5" y="2380.0" />
-                  <point x="734.7" y="2380.0" />
-                  <point x="-38.799999999999955" y="82.0" />
+                  <point x="175.5" y="2370.0" />
+                  <point x="714.4" y="2370.0" />
+                  <point x="-77.60000000000002" y="82.0" />
                 </edge>
                 <edge source="widget.GreenLabel" target="glyph.Label">
                   <point x="0.0" y="-25.5" />
-                  <point x="1573.375" y="1313.0" />
-                  <point x="1526.875" y="1313.0" />
-                  <point x="60.5" y="70.5" />
+                  <point x="637.5" y="1313.0" />
+                  <point x="684.0" y="1313.0" />
+                  <point x="-60.5" y="70.5" />
                 </edge>
                 <edge source="glyph.Character" target="glyph.Glyph">
                   <point x="0.0" y="-148.0" />
-                  <point x="1439.25" y="408.0" />
-                  <point x="1257.9166666666667" y="408.0" />
-                  <point x="80.66666666666674" y="191.5" />
+                  <point x="0.0" y="191.5" />
                 </edge>
                 <edge source="glyph.Label" target="glyph.CompositeGlyph">
                   <point x="0.0" y="-70.5" />
-                  <point x="1466.375" y="1029.0" />
-                  <point x="1023.25" y="1029.0" />
-                  <point x="94.0" y="115.0" />
+                  <point x="744.5" y="1039.0" />
+                  <point x="967.625" y="1039.0" />
+                  <point x="-47.0" y="115.0" />
                 </edge>
                 <edge source="compositor.SimpleCompositor" target="compositor.Compositor">
                   <point x="0.0" y="-60.0" />
@@ -138,39 +131,39 @@
                 </edge>
                 <edge source="command.RedoCommand" target="command.Command">
                   <point x="0.0" y="-70.5" />
-                  <point x="112.5" y="2370.0" />
-                  <point x="695.9" y="2370.0" />
-                  <point x="-77.60000000000002" y="82.0" />
+                  <point x="1432.5" y="2370.0" />
+                  <point x="869.6" y="2370.0" />
+                  <point x="77.60000000000002" y="82.0" />
                 </edge>
                 <edge source="glyph.Composition" target="glyph.Glyph">
                   <point x="0.0" y="-48.5" />
-                  <point x="929.25" y="408.0" />
-                  <point x="1096.5833333333333" y="408.0" />
+                  <point x="1014.625" y="408.0" />
+                  <point x="1181.9583333333333" y="408.0" />
                   <point x="-80.66666666666674" y="191.5" />
                 </edge>
                 <edge source="command.UndoCommand" target="command.Command">
                   <point x="0.0" y="-70.5" />
-                  <point x="1431.0" y="2370.0" />
-                  <point x="851.1" y="2370.0" />
-                  <point x="77.60000000000002" y="82.0" />
+                  <point x="485.0" y="2380.0" />
+                  <point x="753.2" y="2380.0" />
+                  <point x="-38.799999999999955" y="82.0" />
                 </edge>
                 <edge source="glyph.Border" target="glyph.Embellishment">
                   <point x="0.0" y="-70.5" />
-                  <point x="506.75" y="1313.0" />
-                  <point x="427.75" y="1313.0" />
-                  <point x="55.25" y="70.0" />
+                  <point x="121.0" y="1313.0" />
+                  <point x="200.0" y="1313.0" />
+                  <point x="-55.25" y="70.0" />
                 </edge>
                 <edge source="window.SwingWindow" target="window.WindowImp">
                   <point x="0.0" y="-269.0" />
-                  <point x="1875.875" y="297.0" />
-                  <point x="1964.375" y="297.0" />
-                  <point x="-78.5" y="136.0" />
+                  <point x="2198.625" y="297.0" />
+                  <point x="2110.125" y="297.0" />
+                  <point x="78.5" y="136.0" />
                 </edge>
                 <edge source="widget.RedLabel" target="glyph.Label">
                   <point x="0.0" y="-25.5" />
-                  <point x="1359.375" y="1313.0" />
-                  <point x="1405.875" y="1313.0" />
-                  <point x="-60.5" y="70.5" />
+                  <point x="851.5" y="1313.0" />
+                  <point x="805.0" y="1313.0" />
+                  <point x="60.5" y="70.5" />
                 </edge>
                 <edge source="glyph.CompositeGlyph" target="glyph.Composition">
                   <point x="0.0" y="-115.0" />
@@ -178,33 +171,31 @@
                 </edge>
                 <edge source="widget.GreenFactory" target="widget.GUIFactory">
                   <point x="0.0" y="-81.5" />
-                  <point x="545.0" y="1777.0" />
-                  <point x="648.0" y="1777.0" />
-                  <point x="-93.0" y="114.0" />
+                  <point x="937.0" y="1777.0" />
+                  <point x="834.0" y="1777.0" />
+                  <point x="93.0" y="114.0" />
                 </edge>
                 <edge source="command.IncreaseFontSizeCommand" target="command.Command">
                   <point x="0.0" y="-104.0" />
-                  <point x="1124.0" y="2380.0" />
-                  <point x="812.3" y="2380.0" />
-                  <point x="38.799999999999955" y="82.0" />
+                  <point x="0.0" y="82.0" />
                 </edge>
                 <edge source="widget.GreenButton" target="glyph.Button">
                   <point x="0.0" y="-36.5" />
-                  <point x="1076.75" y="1313.0" />
-                  <point x="990.5" y="1313.0" />
+                  <point x="1425.625" y="1313.0" />
+                  <point x="1339.375" y="1313.0" />
                   <point x="61.25" y="114.5" />
                 </edge>
                 <edge source="window.AwtWindowFactory" target="window.WindowImpFactory">
                   <point x="0.0" y="-48.0" />
-                  <point x="1758.5" y="2329.0" />
-                  <point x="1852.75" y="2329.0" />
-                  <point x="-84.25" y="59.0" />
+                  <point x="2115.5" y="2329.0" />
+                  <point x="2021.25" y="2329.0" />
+                  <point x="84.25" y="59.0" />
                 </edge>
                 <edge source="glyph.Embellishment" target="glyph.CompositeGlyph">
                   <point x="0.0" y="-70.0" />
-                  <point x="372.5" y="1039.0" />
-                  <point x="882.25" y="1039.0" />
-                  <point x="-47.0" y="115.0" />
+                  <point x="255.25" y="1029.0" />
+                  <point x="920.625" y="1029.0" />
+                  <point x="-94.0" y="115.0" />
                 </edge>
                 <edge source="window.ApplicationWindow" target="window.Window">
                   <point x="0.0" y="-25.5" />
@@ -212,30 +203,28 @@
                 </edge>
                 <edge source="glyph.Row" target="glyph.CompositeGlyph">
                   <point x="0.0" y="-59.0" />
-                  <point x="1192.75" y="1039.0" />
-                  <point x="976.25" y="1039.0" />
-                  <point x="47.0" y="115.0" />
+                  <point x="0.0" y="115.0" />
                 </edge>
                 <edge source="widget.RedFactory" target="widget.GUIFactory">
                   <point x="0.0" y="-81.5" />
-                  <point x="937.0" y="1777.0" />
-                  <point x="834.0" y="1777.0" />
-                  <point x="93.0" y="114.0" />
+                  <point x="545.0" y="1777.0" />
+                  <point x="648.0" y="1777.0" />
+                  <point x="-93.0" y="114.0" />
                 </edge>
                 <edge source="glyph.Column" target="glyph.CompositeGlyph">
                   <point x="0.0" y="-59.0" />
-                  <point x="121.0" y="1029.0" />
-                  <point x="835.25" y="1029.0" />
-                  <point x="-94.0" y="115.0" />
+                  <point x="1541.625" y="1029.0" />
+                  <point x="1108.625" y="1029.0" />
+                  <point x="94.0" y="115.0" />
                 </edge>
                 <edge source="window.SwingWindowFactory" target="window.WindowImpFactory">
                   <point x="0.0" y="-48.0" />
-                  <point x="2115.5" y="2329.0" />
-                  <point x="2021.25" y="2329.0" />
-                  <point x="84.25" y="59.0" />
+                  <point x="1758.5" y="2329.0" />
+                  <point x="1852.75" y="2329.0" />
+                  <point x="-84.25" y="59.0" />
                 </edge>
               </edges>
-              <settings layout="Hierarchic Group" zoom="0.6937639198218263" x="1408.8812199036918" y="429.0" />
+              <settings layout="Hierarchic Group" zoom="0.6937639198218263" x="661.9390048154094" y="188.9390048154093" />
               <SelectedNodes />
               <Categories>
                 <Category>Fields</Category>
@@ -245,6 +234,26 @@
               </Categories>
               <SCOPE>All</SCOPE>
               <VISIBILITY>private</VISIBILITY>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/build.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="20" lean-forward="false" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="clean.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/clean.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -319,7 +328,6 @@
         <option value="$PROJECT_DIR$/src/window/SwingWindowFactory.java" />
         <option value="$PROJECT_DIR$/src/window/AwtWindowFactory.java" />
         <option value="$PROJECT_DIR$/src/window/SwingWindow.java" />
-        <option value="$PROJECT_DIR$/src/build.sh" />
         <option value="$PROJECT_DIR$/src/window/WindowImpFactory.java" />
         <option value="$PROJECT_DIR$/src/glyph/Composition.java" />
         <option value="$PROJECT_DIR$/src/glyph/Border.java" />
@@ -347,6 +355,7 @@
         <option value="$PROJECT_DIR$/src/glyph/Button.java" />
         <option value="$PROJECT_DIR$/src/glyph/CompositeGlyph.java" />
         <option value="$PROJECT_DIR$/src/window/Window.java" />
+        <option value="$PROJECT_DIR$/src/build.sh" />
       </list>
     </option>
   </component>
@@ -356,9 +365,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1479" />
+    <option name="width" value="1680" />
     <option name="height" value="976" />
   </component>
   <component name="ProjectView">
@@ -531,7 +540,7 @@
       <workItem from="1523235477366" duration="408000" />
       <workItem from="1523291742363" duration="40000" />
       <workItem from="1523322672499" duration="17883000" />
-      <workItem from="1523498756005" duration="7170000" />
+      <workItem from="1523498756005" duration="7334000" />
     </task>
     <task id="LOCAL-00001" summary="WIP: Idk it kinda works.">
       <created>1518540858473</created>
@@ -579,7 +588,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80919000" />
+    <option name="totallyTimeSpent" value="81083000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -591,8 +600,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="976" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1680" height="976" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280363" sideWeight="0.4957265" order="6" side_tool="false" content_ui="tabs" />
@@ -602,9 +610,9 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33804348" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23382519" sideWeight="0.44505495" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23382519" sideWeight="0.44505495" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22763307" sideWeight="0.55494505" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.323496" sideWeight="0.47008547" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.323496" sideWeight="0.47008547" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16910867" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1070,20 +1078,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/build.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clean.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/UML.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1248,8 +1242,8 @@
         <state relative-caret-position="60">
           <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
           <folding>
-            <element signature="e#0#2193#0" expanded="true" />
-            <element signature="imports" expanded="true" />
+            <element signature="e#0#2193#0" expanded="false" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1259,7 +1253,7 @@
         <state relative-caret-position="135">
           <caret line="9" column="36" lean-forward="false" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1365,7 +1359,7 @@
         <state relative-caret-position="-392">
           <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1400,101 +1394,105 @@
           <ID>JAVA</ID>
           <OriginalElement>widget.GUIFactory</OriginalElement>
           <nodes>
-            <node x="1947.0" y="2354.0">window.SwingWindowFactory</node>
+            <node x="1590.0" y="2354.0">window.SwingWindowFactory</node>
             <node x="496.0" y="2653.0">command.KeyMap</node>
-            <node x="1885.875" y="0.0">window.WindowImp</node>
-            <node x="262.0" y="1103.5">glyph.Embellishment</node>
-            <node x="245.0" y="2400.0">command.DecreaseFontSizeCommand</node>
-            <node x="1265.875" y="1383.0">widget.RedLabel</node>
-            <node x="1318.25" y="433.0">glyph.Character</node>
-            <node x="647.75" y="1372.0">widget.RedButton</node>
-            <node x="1590.0" y="2354.0">window.AwtWindowFactory</node>
+            <node x="1874.625" y="0.0">window.WindowImp</node>
+            <node x="144.75" y="1103.5">glyph.Embellishment</node>
+            <node x="0.0" y="2400.0">command.DecreaseFontSizeCommand</node>
+            <node x="758.0" y="1383.0">widget.RedLabel</node>
+            <node x="1141.625" y="433.0">glyph.Character</node>
+            <node x="996.625" y="1372.0">widget.RedButton</node>
+            <node x="1947.0" y="2354.0">window.AwtWindowFactory</node>
             <node x="38.0" y="2090.0">window.ApplicationWindow</node>
-            <node x="110.75" y="1338.0">glyph.ScrollBar</node>
+            <node x="262.0" y="1338.0">glyph.ScrollBar</node>
             <node x="306.0" y="2653.0">glyph.Cursor</node>
-            <node x="1317.0" y="2433.5">command.UndoCommand</node>
+            <node x="371.0" y="2433.5">command.UndoCommand</node>
             <node x="0.0" y="2653.0">command.CommandHistory</node>
-            <node x="751.0" y="1802.0">widget.RedFactory</node>
-            <node x="0.0" y="1114.5">glyph.Column</node>
+            <node x="359.0" y="1802.0">widget.RedFactory</node>
+            <node x="1420.625" y="1114.5">glyph.Column</node>
             <node x="2346.0" y="2186.0">compositor.Compositor</node>
             <node x="1768.5" y="2186.0">window.WindowImpFactory</node>
-            <node x="1472.875" y="1383.0">widget.GreenLabel</node>
-            <node x="822.25" y="532.5">glyph.Composition</node>
-            <node x="385.75" y="1338.0">glyph.Border</node>
-            <node x="616.0" y="2400.0">command.SetFontSizeCommand</node>
+            <node x="537.0" y="1383.0">widget.GreenLabel</node>
+            <node x="907.625" y="532.5">glyph.Composition</node>
+            <node x="0.0" y="1338.0">glyph.Border</node>
+            <node x="985.0" y="2400.0">command.SetFontSizeCommand</node>
             <node x="555.0" y="1524.0">widget.GUIFactory</node>
-            <node x="1056.25" y="444.5">glyph.Rectangle</node>
-            <node x="1345.375" y="1103.0">glyph.Label</node>
+            <node x="1403.625" y="444.5">glyph.Rectangle</node>
+            <node x="623.5" y="1103.0">glyph.Label</node>
             <node x="824.0" y="2653.0">Lexi</node>
             <node x="0.0" y="1524.0">window.Window</node>
-            <node x="806.75" y="1059.0">glyph.Button</node>
-            <node x="2052.875" y="322.0">window.AwtWindow</node>
-            <node x="1071.75" y="1114.5">glyph.Row</node>
-            <node x="1056.25" y="0.0">glyph.Glyph</node>
-            <node x="951.0" y="2400.0">command.IncreaseFontSizeCommand</node>
-            <node x="359.0" y="1802.0">widget.GreenFactory</node>
-            <node x="1718.875" y="322.0">window.SwingWindow</node>
+            <node x="1155.625" y="1059.0">glyph.Button</node>
+            <node x="1707.625" y="322.0">window.AwtWindow</node>
+            <node x="893.625" y="1114.5">glyph.Row</node>
+            <node x="1141.625" y="0.0">glyph.Glyph</node>
+            <node x="619.0" y="2400.0">command.IncreaseFontSizeCommand</node>
+            <node x="751.0" y="1802.0">widget.GreenFactory</node>
+            <node x="2041.625" y="322.0">window.SwingWindow</node>
             <node x="2329.0" y="2310.0">compositor.SimpleCompositor</node>
-            <node x="935.75" y="1372.0">widget.GreenButton</node>
-            <node x="811.75" y="779.0">glyph.CompositeGlyph</node>
-            <node x="0.0" y="2433.5">command.RedoCommand</node>
-            <node x="676.5" y="2186.0">command.Command</node>
+            <node x="1284.625" y="1372.0">widget.GreenButton</node>
+            <node x="897.125" y="779.0">glyph.CompositeGlyph</node>
+            <node x="1320.0" y="2433.5">command.RedoCommand</node>
+            <node x="695.0" y="2186.0">command.Command</node>
           </nodes>
           <notes />
           <edges>
             <edge source="glyph.ScrollBar" target="glyph.Embellishment">
               <point x="0.0" y="-70.5" />
-              <point x="238.25" y="1313.0" />
-              <point x="317.25" y="1313.0" />
-              <point x="-55.25" y="70.0" />
+              <point x="389.5" y="1313.0" />
+              <point x="310.5" y="1313.0" />
+              <point x="55.25" y="70.0" />
             </edge>
             <edge source="command.SetFontSizeCommand" target="command.Command">
               <point x="0.0" y="-104.0" />
-              <point x="0.0" y="82.0" />
+              <point x="1142.5" y="2380.0" />
+              <point x="830.8" y="2380.0" />
+              <point x="38.799999999999955" y="82.0" />
             </edge>
             <edge source="glyph.Rectangle" target="glyph.Glyph">
               <point x="0.0" y="-136.5" />
-              <point x="0.0" y="191.5" />
+              <point x="1524.625" y="408.0" />
+              <point x="1343.2916666666667" y="408.0" />
+              <point x="80.66666666666674" y="191.5" />
             </edge>
             <edge source="window.AwtWindow" target="window.WindowImp">
               <point x="0.0" y="-269.0" />
-              <point x="2209.875" y="297.0" />
-              <point x="2121.375" y="297.0" />
-              <point x="78.5" y="136.0" />
+              <point x="1864.625" y="297.0" />
+              <point x="1953.125" y="297.0" />
+              <point x="-78.5" y="136.0" />
             </edge>
             <edge source="glyph.Button" target="glyph.CompositeGlyph">
               <point x="0.0" y="-114.5" />
-              <point x="0.0" y="115.0" />
+              <point x="1278.125" y="1039.0" />
+              <point x="1061.625" y="1039.0" />
+              <point x="47.0" y="115.0" />
             </edge>
             <edge source="widget.RedButton" target="glyph.Button">
               <point x="0.0" y="-36.5" />
-              <point x="781.75" y="1313.0" />
-              <point x="868.0" y="1313.0" />
+              <point x="1130.625" y="1313.0" />
+              <point x="1216.875" y="1313.0" />
               <point x="-61.25" y="114.5" />
             </edge>
             <edge source="command.DecreaseFontSizeCommand" target="command.Command">
               <point x="0.0" y="-104.0" />
-              <point x="420.5" y="2380.0" />
-              <point x="734.7" y="2380.0" />
-              <point x="-38.799999999999955" y="82.0" />
+              <point x="175.5" y="2370.0" />
+              <point x="714.4" y="2370.0" />
+              <point x="-77.60000000000002" y="82.0" />
             </edge>
             <edge source="widget.GreenLabel" target="glyph.Label">
               <point x="0.0" y="-25.5" />
-              <point x="1573.375" y="1313.0" />
-              <point x="1526.875" y="1313.0" />
-              <point x="60.5" y="70.5" />
+              <point x="637.5" y="1313.0" />
+              <point x="684.0" y="1313.0" />
+              <point x="-60.5" y="70.5" />
             </edge>
             <edge source="glyph.Character" target="glyph.Glyph">
               <point x="0.0" y="-148.0" />
-              <point x="1439.25" y="408.0" />
-              <point x="1257.9166666666667" y="408.0" />
-              <point x="80.66666666666674" y="191.5" />
+              <point x="0.0" y="191.5" />
             </edge>
             <edge source="glyph.Label" target="glyph.CompositeGlyph">
               <point x="0.0" y="-70.5" />
-              <point x="1466.375" y="1029.0" />
-              <point x="1023.25" y="1029.0" />
-              <point x="94.0" y="115.0" />
+              <point x="744.5" y="1039.0" />
+              <point x="967.625" y="1039.0" />
+              <point x="-47.0" y="115.0" />
             </edge>
             <edge source="compositor.SimpleCompositor" target="compositor.Compositor">
               <point x="0.0" y="-60.0" />
@@ -1502,39 +1500,39 @@
             </edge>
             <edge source="command.RedoCommand" target="command.Command">
               <point x="0.0" y="-70.5" />
-              <point x="112.5" y="2370.0" />
-              <point x="695.9" y="2370.0" />
-              <point x="-77.60000000000002" y="82.0" />
+              <point x="1432.5" y="2370.0" />
+              <point x="869.6" y="2370.0" />
+              <point x="77.60000000000002" y="82.0" />
             </edge>
             <edge source="glyph.Composition" target="glyph.Glyph">
               <point x="0.0" y="-48.5" />
-              <point x="929.25" y="408.0" />
-              <point x="1096.5833333333333" y="408.0" />
+              <point x="1014.625" y="408.0" />
+              <point x="1181.9583333333333" y="408.0" />
               <point x="-80.66666666666674" y="191.5" />
             </edge>
             <edge source="command.UndoCommand" target="command.Command">
               <point x="0.0" y="-70.5" />
-              <point x="1431.0" y="2370.0" />
-              <point x="851.1" y="2370.0" />
-              <point x="77.60000000000002" y="82.0" />
+              <point x="485.0" y="2380.0" />
+              <point x="753.2" y="2380.0" />
+              <point x="-38.799999999999955" y="82.0" />
             </edge>
             <edge source="glyph.Border" target="glyph.Embellishment">
               <point x="0.0" y="-70.5" />
-              <point x="506.75" y="1313.0" />
-              <point x="427.75" y="1313.0" />
-              <point x="55.25" y="70.0" />
+              <point x="121.0" y="1313.0" />
+              <point x="200.0" y="1313.0" />
+              <point x="-55.25" y="70.0" />
             </edge>
             <edge source="window.SwingWindow" target="window.WindowImp">
               <point x="0.0" y="-269.0" />
-              <point x="1875.875" y="297.0" />
-              <point x="1964.375" y="297.0" />
-              <point x="-78.5" y="136.0" />
+              <point x="2198.625" y="297.0" />
+              <point x="2110.125" y="297.0" />
+              <point x="78.5" y="136.0" />
             </edge>
             <edge source="widget.RedLabel" target="glyph.Label">
               <point x="0.0" y="-25.5" />
-              <point x="1359.375" y="1313.0" />
-              <point x="1405.875" y="1313.0" />
-              <point x="-60.5" y="70.5" />
+              <point x="851.5" y="1313.0" />
+              <point x="805.0" y="1313.0" />
+              <point x="60.5" y="70.5" />
             </edge>
             <edge source="glyph.CompositeGlyph" target="glyph.Composition">
               <point x="0.0" y="-115.0" />
@@ -1542,33 +1540,31 @@
             </edge>
             <edge source="widget.GreenFactory" target="widget.GUIFactory">
               <point x="0.0" y="-81.5" />
-              <point x="545.0" y="1777.0" />
-              <point x="648.0" y="1777.0" />
-              <point x="-93.0" y="114.0" />
+              <point x="937.0" y="1777.0" />
+              <point x="834.0" y="1777.0" />
+              <point x="93.0" y="114.0" />
             </edge>
             <edge source="command.IncreaseFontSizeCommand" target="command.Command">
               <point x="0.0" y="-104.0" />
-              <point x="1124.0" y="2380.0" />
-              <point x="812.3" y="2380.0" />
-              <point x="38.799999999999955" y="82.0" />
+              <point x="0.0" y="82.0" />
             </edge>
             <edge source="widget.GreenButton" target="glyph.Button">
               <point x="0.0" y="-36.5" />
-              <point x="1076.75" y="1313.0" />
-              <point x="990.5" y="1313.0" />
+              <point x="1425.625" y="1313.0" />
+              <point x="1339.375" y="1313.0" />
               <point x="61.25" y="114.5" />
             </edge>
             <edge source="window.AwtWindowFactory" target="window.WindowImpFactory">
               <point x="0.0" y="-48.0" />
-              <point x="1758.5" y="2329.0" />
-              <point x="1852.75" y="2329.0" />
-              <point x="-84.25" y="59.0" />
+              <point x="2115.5" y="2329.0" />
+              <point x="2021.25" y="2329.0" />
+              <point x="84.25" y="59.0" />
             </edge>
             <edge source="glyph.Embellishment" target="glyph.CompositeGlyph">
               <point x="0.0" y="-70.0" />
-              <point x="372.5" y="1039.0" />
-              <point x="882.25" y="1039.0" />
-              <point x="-47.0" y="115.0" />
+              <point x="255.25" y="1029.0" />
+              <point x="920.625" y="1029.0" />
+              <point x="-94.0" y="115.0" />
             </edge>
             <edge source="window.ApplicationWindow" target="window.Window">
               <point x="0.0" y="-25.5" />
@@ -1576,30 +1572,28 @@
             </edge>
             <edge source="glyph.Row" target="glyph.CompositeGlyph">
               <point x="0.0" y="-59.0" />
-              <point x="1192.75" y="1039.0" />
-              <point x="976.25" y="1039.0" />
-              <point x="47.0" y="115.0" />
+              <point x="0.0" y="115.0" />
             </edge>
             <edge source="widget.RedFactory" target="widget.GUIFactory">
               <point x="0.0" y="-81.5" />
-              <point x="937.0" y="1777.0" />
-              <point x="834.0" y="1777.0" />
-              <point x="93.0" y="114.0" />
+              <point x="545.0" y="1777.0" />
+              <point x="648.0" y="1777.0" />
+              <point x="-93.0" y="114.0" />
             </edge>
             <edge source="glyph.Column" target="glyph.CompositeGlyph">
               <point x="0.0" y="-59.0" />
-              <point x="121.0" y="1029.0" />
-              <point x="835.25" y="1029.0" />
-              <point x="-94.0" y="115.0" />
+              <point x="1541.625" y="1029.0" />
+              <point x="1108.625" y="1029.0" />
+              <point x="94.0" y="115.0" />
             </edge>
             <edge source="window.SwingWindowFactory" target="window.WindowImpFactory">
               <point x="0.0" y="-48.0" />
-              <point x="2115.5" y="2329.0" />
-              <point x="2021.25" y="2329.0" />
-              <point x="84.25" y="59.0" />
+              <point x="1758.5" y="2329.0" />
+              <point x="1852.75" y="2329.0" />
+              <point x="-84.25" y="59.0" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="0.6937639198218263" x="1408.8812199036918" y="429.0" />
+          <settings layout="Hierarchic Group" zoom="0.6937639198218263" x="661.9390048154094" y="188.9390048154093" />
           <SelectedNodes />
           <Categories>
             <Category>Fields</Category>
@@ -1609,6 +1603,22 @@
           </Categories>
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/build.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="20" lean-forward="false" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clean.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
