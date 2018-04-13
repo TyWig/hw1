@@ -2,6 +2,8 @@ package command;
 
 import java.util.Vector;
 
+// Singleton(127)
+
 public class CommandHistory {
     private static CommandHistory instance = null;
     private Vector<Command> history;
@@ -19,6 +21,7 @@ public class CommandHistory {
 
     public void add(Command command) {
         if(present < history.size()) {
+
           this.clearUndoneCommands();
         }
         history.add(command);
@@ -26,7 +29,7 @@ public class CommandHistory {
     }
 
     public void undo() {
-        if(!history.isEmpty()) {
+        if(!history.isEmpty() && present - 1 >= 0) {
             Command command = history.elementAt(present-1);
             command.unexecute();
             present--;
@@ -34,16 +37,15 @@ public class CommandHistory {
     }
 
     public void redo() {
-        if(present < history.size()) {
-            present++;
+        if(present < history.size() && present >= 0) {
             Command command = history.elementAt(present);
             command.execute();
-
+            present++;
         }
     }
 
     private void clearUndoneCommands() {
-        for (int i = history.size() - 1; i >= present - 1; i--) {
+        for (int i = history.size() - 1; i > present - 1; i--) {
             history.remove(i);
         }
     }

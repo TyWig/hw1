@@ -2,6 +2,9 @@ package command;
 
 import window.Window;
 
+// Command(233).ConcreteCommand
+// Prototype(117).ConcretePrototype
+
 public class DecreaseFontSizeCommand extends Command {
     private int oldFontSize;
     private int currentFontSize;
@@ -16,7 +19,7 @@ public class DecreaseFontSizeCommand extends Command {
     }
 
     private DecreaseFontSizeCommand(Window window, int oldFontSize, int currentFontSize) {
-        super(window);
+        this(window);
         this.oldFontSize = oldFontSize;
         this.currentFontSize = currentFontSize;
     }
@@ -28,7 +31,6 @@ public class DecreaseFontSizeCommand extends Command {
         this.currentFontSize--;
         window.setFontSize(this.currentFontSize);
         window.repaint();
-//        System.out.println(this.getClass().toString() + " It worked");
     }
 
     @Override

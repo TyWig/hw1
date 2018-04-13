@@ -2,6 +2,9 @@ package command;
 
 import window.Window;
 
+// Command(233).ConcreteCommand
+// Prototype(117).ConcretePrototype
+
 public class RedoCommand extends Command {
 
     public RedoCommand(Window window) {
@@ -20,7 +23,7 @@ public class RedoCommand extends Command {
 
     @Override
     public void unexecute() {
-        window.redoCommand();
+        window.undoCommand();
     }
 
     @Override

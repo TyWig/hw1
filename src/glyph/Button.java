@@ -3,8 +3,10 @@ package glyph;
 import window.Window;
 import command.Command;
 
-//FactoryMethod(107).Product
-//AbstractFactory(87).AbstractProduct
+// FactoryMethod(107).Product
+// AbstractFactory(87).AbstractProduct
+// Command(233).Receiver
+// ChainOfResponsibility(233).ConcreteHandler
 
 public abstract class Button extends CompositeGlyph {
     protected String myColor;

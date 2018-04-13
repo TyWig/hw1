@@ -3,9 +3,11 @@ package window;
 import command.*;
 import glyph.*;
 
-import java.util.Iterator;
-
 // Bridge(151).Abstraction
+// Command(233).Invoker
+// Command(233).Receiver
+// Prototype(117).Client
+// ChainOfResponsibility(233).Client
 
 public abstract class Window {
     private WindowImp window;

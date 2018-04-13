@@ -4,8 +4,9 @@ import command.Command;
 import window.*;
 import java.util.Iterator;
 
-//Composite(165).Component
-//Decorator(175).Component
+// Composite(165).Component
+// Decorator(175).Component
+// ChainOfResponsibility(233).Handler
 
 public abstract class Glyph {
     private Glyph parent;

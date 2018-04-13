@@ -1,14 +1,13 @@
 package glyph;
 
-import command.Command;
 import window.Window;
-
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.LinkedList;
 
-//Composite(165).Component
-//Decorator(175).ConcreteComponent
+// Composite(165).Component
+// Decorator(175).ConcreteComponent
+// ChainOfResponsibility(233).Handler
 
 public abstract class CompositeGlyph extends Composition {
     protected LinkedList<Glyph> children;

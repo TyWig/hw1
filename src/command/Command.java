@@ -2,6 +2,9 @@ package command;
 
 import window.Window;
 
+// Command(233).Command
+// Prototype(117).Prototype
+
 public abstract class Command {
     protected Window window;
 

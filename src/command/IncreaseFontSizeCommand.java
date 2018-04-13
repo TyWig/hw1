@@ -2,6 +2,9 @@ package command;
 
 import window.Window;
 
+// Command(233).ConcreteCommand
+// Prototype(117).ConcretePrototype
+
 public class IncreaseFontSizeCommand extends Command {
     private int oldFontSize;
     private int currentFontSize;
@@ -16,7 +19,7 @@ public class IncreaseFontSizeCommand extends Command {
     }
 
     private IncreaseFontSizeCommand(Window window, int oldFontSize, int currentFontSize) {
-        super(window);
+        this(window);
         this.oldFontSize = oldFontSize;
         this.currentFontSize = currentFontSize;
     }

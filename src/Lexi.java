@@ -2,6 +2,7 @@
 // AbstractFactory(87).Client
 // FactoryMethod(107).Client
 // Bridge(151).Client
+// Command(233).Client
 
 import command.DecreaseFontSizeCommand;
 import command.IncreaseFontSizeCommand;
@@ -11,9 +12,6 @@ import widget.GUIFactory;
 import window.*;
 import glyph.*;
 
-import java.security.SecureRandom;
-import java.util.LinkedList;
-import java.util.Random;
 
 public class Lexi {
 
