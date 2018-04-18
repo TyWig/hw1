@@ -26,9 +26,4 @@ abstract class Embellishment extends CompositeGlyph {
     public void remove(Glyph glyph) {
         this.children.getFirst().remove(glyph);
     }
-
-    @Override
-    public Glyph child(int position) {
-        return this.children.getFirst().child(position);
-    }
 }

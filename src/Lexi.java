@@ -4,9 +4,7 @@
 // Bridge(151).Client
 // Command(233).Client
 
-import command.DecreaseFontSizeCommand;
-import command.IncreaseFontSizeCommand;
-import command.SetFontSizeCommand;
+import command.*;
 import glyph.Character;
 import widget.GUIFactory;
 import window.*;
@@ -17,6 +15,12 @@ public class Lexi {
 
     public static void main(String[] args) {
         Window window = new ApplicationWindow("Lexi");
+        window.addKey('i', new IncreaseFontSizeCommand(window));
+        window.addKey('d', new DecreaseFontSizeCommand(window));
+        window.addKey('r', new RedoCommand(window));
+        window.addKey('u', new UndoCommand(window));
+        window.addKey('w', new PrintWordsCommand(window));
+
         GUIFactory factory = GUIFactory.getInstance();
         String[] words = {"PQ", "ab", "abc d e fg h", "dogs"};
         Glyph doc = new Column(window);

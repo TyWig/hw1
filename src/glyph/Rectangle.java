@@ -1,5 +1,6 @@
 package glyph;
 
+import visitor.GlyphVisitor;
 import window.Window;
 
 import java.util.Iterator;
@@ -14,12 +15,12 @@ public class Rectangle extends Glyph {
     }
 
     @Override
-    public Glyph find(int x, int y) {
-        return null;
+    public void accept(GlyphVisitor visitor) {
+
     }
 
     @Override
-    public Iterator<Glyph> getIterator() {
+    public Glyph find(int x, int y) {
         return null;
     }
 
@@ -51,11 +52,6 @@ public class Rectangle extends Glyph {
     @Override
     public void remove(Glyph glyph) {
         throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public Glyph child(int position) {
-        return null;
     }
 
     @Override

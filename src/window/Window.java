@@ -19,15 +19,15 @@ public abstract class Window {
         window = WindowImpFactory.getInstance().createWindow(title, this);
         keyMap = new KeyMap();
         commandHistory = CommandHistory.getInstance();
-        initKeyMap();
+//        initKeyMap();
     }
-
-    private void initKeyMap() {
-        keyMap.put('i', new IncreaseFontSizeCommand(this));
-        keyMap.put('d', new DecreaseFontSizeCommand(this));
-        keyMap.put('r', new RedoCommand(this));
-        keyMap.put('u', new UndoCommand(this));
-    }
+//
+//    private void initKeyMap() {
+//        keyMap.put('i', new IncreaseFontSizeCommand(this));
+//        keyMap.put('d', new DecreaseFontSizeCommand(this));
+//        keyMap.put('r', new RedoCommand(this));
+//        keyMap.put('u', new UndoCommand(this));
+//    }
 
     public void draw() {
         contents.draw(this);
@@ -51,6 +51,12 @@ public abstract class Window {
                 command.execute();
                 commandHistory.add(command);
             }
+        }
+    }
+
+    public void addKey(char key, Command command) {
+        if(command != null){
+            keyMap.put(key, command);
         }
     }
 

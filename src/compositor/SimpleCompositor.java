@@ -3,6 +3,7 @@ package compositor;
 import glyph.Composition;
 import glyph.Cursor;
 import glyph.Glyph;
+import iterator.Iterator;
 import window.Window;
 
 //Strategy(315).ConcreteStrategy
@@ -24,19 +25,17 @@ public class SimpleCompositor implements Compositor {
     @Override
     public void compose() {
         Cursor newBounds = composition.getBounds(this.window);
-        int childIndex = 0;
-        Glyph next = composition.child(childIndex);
+        Iterator it = composition.createIterator();
+        Glyph next;
 
-        while(next != null) {
+        while(it.hasNext()) {
+            next = it.next();
             next.intersects(newBounds.x, newBounds.y);
             next.compose();
 
             Cursor childBounds = next.getBounds(this.window);
             this.composition.updateCursor(childBounds);
             newBounds = this.composition.getBounds(this.window);
-
-            childIndex++;
-            next = composition.child(childIndex);
         }
     }
 }

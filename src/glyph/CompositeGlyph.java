@@ -1,20 +1,27 @@
 package glyph;
 
+import iterator.VectorIterator;
+import visitor.GlyphVisitor;
 import window.Window;
 import java.util.Arrays;
-import java.util.Iterator;
 import java.util.LinkedList;
+import iterator.Iterator;
 
 // Composite(165).Component
 // Decorator(175).ConcreteComponent
 // ChainOfResponsibility(233).Handler
 
 public abstract class CompositeGlyph extends Composition {
-    protected LinkedList<Glyph> children;
+    LinkedList<Glyph> children;
 
     CompositeGlyph(Window window) {
         super(window);
         this.children = new LinkedList<>();
+    }
+
+    @Override
+    public void accept(GlyphVisitor visitor) {
+
     }
 
     @Override
@@ -29,8 +36,8 @@ public abstract class CompositeGlyph extends Composition {
     }
 
     @Override
-    public Iterator<Glyph> getIterator() {
-        return this.children.iterator();
+    public Iterator createIterator() {
+        return new VectorIterator(children);
     }
 
     @Override
@@ -65,9 +72,5 @@ public abstract class CompositeGlyph extends Composition {
         root.compose();
     }
 
-    @Override
-    public Glyph child(int position) {
-        if(position >= children.size()) return null;
-        return this.children.get(position);
-    }
+
 }

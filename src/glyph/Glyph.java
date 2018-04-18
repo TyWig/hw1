@@ -1,12 +1,16 @@
 package glyph;
 
 import command.Command;
+import visitor.GlyphVisitor;
 import window.*;
-import java.util.Iterator;
+import iterator.Iterator;
+import iterator.NullIterator;
 
 // Composite(165).Component
 // Decorator(175).Component
 // ChainOfResponsibility(233).Handler
+// Visitor(331).Element
+// Visitor(331).ObjectStructure
 
 public abstract class Glyph {
     private Glyph parent;
@@ -39,21 +43,23 @@ public abstract class Glyph {
         return null;
     }
 
+    public Iterator createIterator() {
+        return new NullIterator();
+    }
+
     @Override
     public String toString()
     {
         return String.format("Type: %s\tX: %d\tY: %d\tWidth: %d\tHeight: %d\n", this.getClass().toString(), this.bounds.x, this.bounds.y, this.bounds.width, this.bounds.height );
     }
 
-
+    public abstract void accept(GlyphVisitor visitor);
     public abstract Glyph find(int x, int y);
-    public abstract Iterator<Glyph> getIterator();
     public abstract void draw(Window window);
     public abstract void compose();
     public abstract Cursor getBounds(Window window);
     public abstract void insert(Glyph glyph);
     public abstract void insert(Glyph[] glyphs);
     public abstract void remove(Glyph glyph);
-    public abstract Glyph child(int position);
     public abstract void updateCursor(Cursor childBounds);
 }
