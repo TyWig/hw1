@@ -1,10 +1,15 @@
 package visitor;
 
-import glyph.Glyph;
+import glyph.Character;
+import glyph.Rectangle;
+import glyph.Row;
+import glyph.CompositeGlyph;
 
 public abstract class GlyphVisitor {
 
-    public void visit(Glyph glyph) {
-        glyph.accept(this);
-    }
+    public abstract void visit(Character glyph);
+
+    public void visit(Rectangle glyph) { }
+
+    public void visit(CompositeGlyph glyph) { }
 }

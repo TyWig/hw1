@@ -15,7 +15,7 @@ public class PrintWordsCommand extends Command {
 
     @Override
     public void execute() {
-        System.out.println("fuck");
+
     }
 
     @Override

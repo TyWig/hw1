@@ -13,6 +13,12 @@ public class VectorIterator implements Iterator {
     }
 
     @Override
+    public Glyph first() {
+        curr = 0;
+        return glyphs.get(curr);
+    }
+
+    @Override
     public boolean hasNext() {
         return curr < glyphs.size();
     }

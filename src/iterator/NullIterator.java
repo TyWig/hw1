@@ -14,6 +14,11 @@ public class NullIterator implements Iterator {
     }
 
     @Override
+    public Glyph first() {
+        return null;
+    }
+
+    @Override
     public Glyph current() {
         return null;
     }

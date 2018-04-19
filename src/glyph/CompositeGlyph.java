@@ -21,7 +21,9 @@ public abstract class CompositeGlyph extends Composition {
 
     @Override
     public void accept(GlyphVisitor visitor) {
-
+        for (Glyph child: this.children) {
+            child.accept(visitor);
+        }
     }
 
     @Override

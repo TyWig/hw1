@@ -15,7 +15,7 @@ public class Character extends Glyph {
     }
 
 
-    public char getMyChar() {
+    public char getChar() {
         return myChar;
     }
 

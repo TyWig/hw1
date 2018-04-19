@@ -16,7 +16,7 @@ public class Rectangle extends Glyph {
 
     @Override
     public void accept(GlyphVisitor visitor) {
-
+        visitor.visit(this);
     }
 
     @Override
