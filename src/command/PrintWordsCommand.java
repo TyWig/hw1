@@ -1,11 +1,23 @@
 package command;
 
+import glyph.Glyph;
+import iterator.Iterator;
+import iterator.PreorderIterator;
+import visitor.GlyphVisitor;
+import visitor.WordsVisitor;
 import window.Window;
 
-public class PrintWordsCommand extends Command {
+// Command(233).ConcreteCommand
+// Prototype(117).ConcretePrototype
 
-    public PrintWordsCommand(Window window) {
+public class PrintWordsCommand extends Command {
+    private Glyph contents;
+    private GlyphVisitor visitor;
+
+    public PrintWordsCommand(Window window, Glyph contents) {
         super(window);
+        this.contents = contents;
+        this.visitor = new WordsVisitor();
     }
 
     @Override
@@ -15,7 +27,12 @@ public class PrintWordsCommand extends Command {
 
     @Override
     public void execute() {
-
+        Iterator i = new PreorderIterator(this.contents);
+        for(i.first(); i.hasNext(); i.next()) {
+            Glyph curr = i.current();
+            curr.accept(this.visitor);
+        }
+        System.out.println(this.visitor.toString());
     }
 
     @Override

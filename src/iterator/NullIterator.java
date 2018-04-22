@@ -2,7 +2,15 @@ package iterator;
 
 import glyph.Glyph;
 
+// Iterator(257).ConcreteIterator
+// FactoryMethod(107).ConcreteProduct
+
 public class NullIterator implements Iterator {
+    @Override
+    public boolean done() {
+        return false;
+    }
+
     @Override
     public boolean hasNext() {
         return false;

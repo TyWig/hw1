@@ -3,9 +3,8 @@ package glyph;
 import visitor.GlyphVisitor;
 import window.Window;
 
-import java.util.Iterator;
-
-//Composite(165).Leaf
+// Composite(165).Leaf
+// Visitor(331).ConcreteElement
 
 public class Character extends Glyph {
     private char myChar;
@@ -33,7 +32,8 @@ public class Character extends Glyph {
 
     @Override
     public void accept(GlyphVisitor visitor) {
-
+        System.out.println(myChar);
+        visitor.visit(this);
     }
 
     @Override

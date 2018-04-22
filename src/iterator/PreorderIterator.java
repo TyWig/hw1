@@ -1,42 +1,62 @@
 package iterator;
 
 import glyph.Glyph;
-
-import java.util.LinkedList;
 import java.util.Stack;
+
+// Iterator(257).ConcreteIterator
+// FactoryMethod(107).ConcreteProduct
 
 public class PreorderIterator implements Iterator {
     private Stack<Iterator> stack;
-    private LinkedList<Glyph> glyphs;
+    private Glyph contents;
     private int curr;
 
-    public PreorderIterator(LinkedList<Glyph> glyphs) {
-        this.glyphs = glyphs;
-        curr = 0;
-        stack = new Stack<>();
+    public PreorderIterator(Glyph contents) {
+        this.curr = 0;
+        this.contents = contents;
+        this.stack = new Stack<>();
     }
 
     @Override
     public Glyph first() {
-        Iterator firstIt = glyphs.get(curr).createIterator();
-        Iterator firstGlyphIt = firstIt.first().createIterator();
-        stack.push(firstGlyphIt);
-        return glyphs.get(curr);
+        Iterator firstIt = this.contents.createIterator();
+        firstIt.first();
+        stack.push(firstIt);
+        return firstIt.current();
     }
 
     @Override
     public boolean hasNext() {
+        return !stack.empty() && stack.peek().hasNext();
+    }
+
+    @Override
+    public boolean done() {
         return false;
     }
 
     @Override
     public Glyph next() {
-        return  null;
+        Iterator currentTop = stack.peek();
+        Glyph curr = currentTop.current();
+        Iterator newIterator = curr.createIterator();
+        newIterator.first();
+        stack.push(newIterator);
+
+        while(!stack.empty() && !stack.peek().hasNext()) {
+            stack.pop();
+        }
+
+        if(!stack.empty() && stack.peek().hasNext()) {
+            return stack.peek().next();
+        }
+
+        return stack.peek().current();
     }
 
     @Override
     public Glyph current() {
         Iterator top = stack.peek();
-        return top.next();
+        return top.current();
     }
 }

@@ -1,8 +1,10 @@
 package iterator;
 
 import glyph.Glyph;
-
 import java.util.LinkedList;
+
+// Iterator(257).ConcreteIterator
+// FactoryMethod(107).ConcreteProduct
 
 public class VectorIterator implements Iterator {
     private LinkedList<Glyph> glyphs;
@@ -28,6 +30,11 @@ public class VectorIterator implements Iterator {
         Glyph c = glyphs.get(curr);
         curr++;
         return c;
+    }
+
+    @Override
+    public boolean done() {
+        return curr <= glyphs.size();
     }
 
     @Override

@@ -10,9 +10,13 @@ import iterator.Iterator;
 // Composite(165).Component
 // Decorator(175).ConcreteComponent
 // ChainOfResponsibility(233).Handler
+// Iterator(257).ConcreteAggregate
+// Visitor(331).ConcreteElement
+// FactoryMethod(107).Creator
 
 public abstract class CompositeGlyph extends Composition {
     LinkedList<Glyph> children;
+
 
     CompositeGlyph(Window window) {
         super(window);
@@ -21,9 +25,7 @@ public abstract class CompositeGlyph extends Composition {
 
     @Override
     public void accept(GlyphVisitor visitor) {
-        for (Glyph child: this.children) {
-            child.accept(visitor);
-        }
+        visitor.visit(this);
     }
 
     @Override

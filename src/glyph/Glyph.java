@@ -11,6 +11,10 @@ import iterator.NullIterator;
 // ChainOfResponsibility(233).Handler
 // Visitor(331).Element
 // Visitor(331).ObjectStructure
+// Iterator(257).Aggregate
+// Visitor(331).Element
+// Visitor(331).ObjectStructure
+// FactoryMethod(107).Creator
 
 public abstract class Glyph {
     private Glyph parent;
@@ -53,7 +57,7 @@ public abstract class Glyph {
         return String.format("Type: %s\tX: %d\tY: %d\tWidth: %d\tHeight: %d\n", this.getClass().toString(), this.bounds.x, this.bounds.y, this.bounds.width, this.bounds.height );
     }
 
-    public abstract void accept(GlyphVisitor visitor);
+    public void accept(GlyphVisitor visitor) { }
     public abstract Glyph find(int x, int y);
     public abstract void draw(Window window);
     public abstract void compose();
