@@ -32,7 +32,6 @@ public class Character extends Glyph {
 
     @Override
     public void accept(GlyphVisitor visitor) {
-        System.out.println(myChar);
         visitor.visit(this);
     }
 

@@ -31,11 +31,6 @@ public class PreorderIterator implements Iterator {
     }
 
     @Override
-    public boolean done() {
-        return false;
-    }
-
-    @Override
     public Glyph next() {
         Iterator currentTop = stack.peek();
         Glyph curr = currentTop.current();
@@ -45,10 +40,9 @@ public class PreorderIterator implements Iterator {
 
         while(!stack.empty() && !stack.peek().hasNext()) {
             stack.pop();
-        }
-
-        if(!stack.empty() && stack.peek().hasNext()) {
-            return stack.peek().next();
+            if(!stack.empty() && stack.peek().hasNext()) {
+                return stack.peek().next();
+            }
         }
 
         return stack.peek().current();

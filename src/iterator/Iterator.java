@@ -7,7 +7,6 @@ import glyph.Glyph;
 
 public interface Iterator {
     Glyph first();
-    boolean done();
     boolean hasNext();
     Glyph next();
     Glyph current();

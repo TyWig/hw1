@@ -7,11 +7,6 @@ import glyph.Glyph;
 
 public class NullIterator implements Iterator {
     @Override
-    public boolean done() {
-        return false;
-    }
-
-    @Override
     public boolean hasNext() {
         return false;
     }

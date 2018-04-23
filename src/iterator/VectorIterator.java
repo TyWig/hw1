@@ -33,11 +33,6 @@ public class VectorIterator implements Iterator {
     }
 
     @Override
-    public boolean done() {
-        return curr <= glyphs.size();
-    }
-
-    @Override
     public Glyph current() {
         return glyphs.get(curr);
     }
