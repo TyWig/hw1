@@ -1,5 +1,7 @@
 javac window/*.java
 javac command/*.java
+javac visitor/*.java
+javac iterator/*.java
 javac compositor/*.java
 javac glyph/*.java
 javac widget/*.java
